@@ -4,7 +4,14 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer id="footer">
-            <img className="footer-img" src="./Images/logo.png" alt="" />
+            <div className="footer-img-container">
+                <img
+                    className="footer-img"
+                    src="./Images/logo.png"
+                    alt="Footer Logo"
+                    role="presentation"
+                />
+            </div>
             <div className="footer-contact">
                 <div className="footer-address">
                     <h3>LV Hair</h3>
@@ -16,26 +23,32 @@ const Footer = () => {
                     Email: claireholden.ch85@gmail.com
                 </p>
             </div>
-            <ul className="social-links">
-                <li>
-                    <a
-                        className="social-link"
-                        href="https://www.facebook.com/claireholdenhairstylist"
-                    >
-                        <span className="visually-hidden">Facebook Link</span>
-                        <FaFacebook aria-hidden={true} focusable={false} />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="social-link"
-                        href="https://www.instagram.com/claire_holden_hairstylist/?hl=en"
-                    >
-                        <span className="visually-hidden">Instagram Link</span>
-                        <FaInstagram aria-hidden={true} focusable={false} />
-                    </a>
-                </li>
-            </ul>
+            <div className="social-links-container">
+                <ul className="social-links">
+                    <li>
+                        <a
+                            className="social-link"
+                            href="https://www.facebook.com/claireholdenhairstylist"
+                        >
+                            <span className="visually-hidden">
+                                Facebook Link
+                            </span>
+                            <FaFacebook aria-hidden={true} focusable={false} />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="social-link"
+                            href="https://www.instagram.com/claire_holden_hairstylist/?hl=en"
+                        >
+                            <span className="visually-hidden">
+                                Instagram Link
+                            </span>
+                            <FaInstagram aria-hidden={true} focusable={false} />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     );
 };

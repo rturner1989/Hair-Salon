@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header id="header">
-            <img className="nav-img" src="./Images/logo.png" alt="" />
+            <img
+                className="nav-img"
+                src="./Images/logo.png"
+                alt="Header Logo"
+                role="presentation"
+            />
             <nav className="nav-container">
                 <ul className="nav-list">
                     <li>
