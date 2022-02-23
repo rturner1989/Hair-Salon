@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 
 const About = () => {
     return (
@@ -44,10 +45,13 @@ const About = () => {
                     <h2>A little bit about me</h2>
                     <div className="indepth-paragraph">
                         <p>I began hairdressing in 2001!</p>
-                        <p>
-                            At the time, I was studying for my GCSE's while
-                            working part time in a local salon called Escape.
-                        </p>
+                        <Zoom>
+                            <p>
+                                At the time, I was studying for my GCSE's while
+                                working part time in a local salon called
+                                Escape.
+                            </p>
+                        </Zoom>
                         <p>
                             Seeing peoples faces after they had visited the
                             salon made me realise how much I enjoyed seeing
