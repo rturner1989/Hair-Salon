@@ -24,6 +24,7 @@ const Footer = () => {
                 </p>
             </div>
             <div className="social-links-container">
+                <h3>Follow Me</h3>
                 <ul className="social-links">
                     <li>
                         <a
