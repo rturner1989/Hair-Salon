@@ -1,5 +1,4 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
 
 const About = () => {
     return (
@@ -27,31 +26,30 @@ const About = () => {
                         src="./Images/claire-about.jpg"
                         alt=""
                     />
-                    <p>
-                        I would describe my style of hairdressing as naturally
-                        beautiful.
-                    </p>
-                    <p>
-                        I like to create styles that my clients are able to
-                        recreate in their own homes.
-                    </p>
-                    <p>
-                        I enjoy giving helpful styling tips and teaching
-                        techniques allowing my clients to style there hair for
-                        days to come.
-                    </p>
+                    <div className="basic-info-text-container">
+                        <p>
+                            I would describe my style of hairdressing as
+                            naturally beautiful.
+                        </p>
+                        <p>
+                            I like to create styles that my clients are able to
+                            recreate in their own homes.
+                        </p>
+                        <p>
+                            I enjoy giving helpful styling tips and teaching
+                            techniques allowing my clients to style there hair
+                            for days to come.
+                        </p>
+                    </div>
                 </aside>
                 <section className="about-indepth-info">
                     <h2>A little bit about me</h2>
                     <div className="indepth-paragraph">
                         <p>I began hairdressing in 2001!</p>
-                        <Zoom>
-                            <p>
-                                At the time, I was studying for my GCSE's while
-                                working part time in a local salon called
-                                Escape.
-                            </p>
-                        </Zoom>
+                        <p>
+                            At the time, I was studying for my GCSE's while
+                            working part time in a local salon called Escape.
+                        </p>
                         <p>
                             Seeing peoples faces after they had visited the
                             salon made me realise how much I enjoyed seeing
