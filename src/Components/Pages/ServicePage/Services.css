@@ -33,3 +33,15 @@
 .service-option-input {
     appearance: none;
 }
+
+/* Options */
+.options-container {
+    min-height: 300px;
+    min-width: 400px;
+}
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
