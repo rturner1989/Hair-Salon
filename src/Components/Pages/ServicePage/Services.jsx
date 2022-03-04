@@ -76,7 +76,7 @@ const Services = () => {
             <section className="service-header">
                 <img
                     style={{ maxWidth: "50%" }}
-                    src="./Images/about-header.jpg"
+                    src="./Images/HairBannerService.jpg"
                     alt=""
                 />
                 <div className="service-header-blurb">
@@ -85,14 +85,16 @@ const Services = () => {
                         Services for men and women with any hair type and style.
                     </p>
                     <p>
-                        A quality service that will last through your busy
-                        lifestyle.
+                        <i>
+                            A quality service that will last through your busy
+                            lifestyle.
+                        </i>
                     </p>
+                    <button className="bookingBtn">Book Now</button>
                 </div>
-                <div className="cover-opacity"></div>
             </section>
             <section className="service-options-container">
-                <h1>My Services</h1>
+                <h1>Services</h1>
                 <div className="service-options">
                     <div className="options-container">
                         <h2>Ladies</h2>
@@ -108,7 +110,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="options-container">
-                        <h2>Colours</h2>
+                        <h2>Colours&#42;</h2>
                         <div>
                             {optionColour.map((option) => {
                                 return (
@@ -147,6 +149,43 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section>
+                <p>&#42; Price includes cut &#38; finish (Excludes toner)</p>
+                <p>&#42; Additional £10.00 for long/thick hair</p>
+            </section>
+            <section className="about-service-container">
+                <h3>About my Service</h3>
+                <p>
+                    <b>Lorem, ipsum dolor sit</b>
+                    amet consectetur adipisicing elit. Doloribus sint ratione
+                    rerum voluptatum praesentium, temporibus repellat aliquid.
+                    Rerum, aliquid fugit? Perspiciatis pariatur magnam quam,
+                    nisi sint id itaque nostrum dicta reprehenderit
+                    voluptatibus, nesciunt sit perferendis beatae qui corrupti
+                    repellendus illum quos ut mollitia. Itaque cupiditate qui
+                    ullam, impedit ad sequi?
+                </p>
+                <p>
+                    <b>Lorem, ipsum dolor sit</b>
+                    amet consectetur adipisicing elit. Doloribus sint ratione
+                    rerum voluptatum praesentium, temporibus repellat aliquid.
+                    Rerum, aliquid fugit? Perspiciatis pariatur magnam quam,
+                    nisi sint id itaque nostrum dicta reprehenderit
+                    voluptatibus, nesciunt sit perferendis beatae qui corrupti
+                    repellendus illum quos ut mollitia. Itaque cupiditate qui
+                    ullam, impedit ad sequi?
+                </p>
+                <p>
+                    <b>Lorem, ipsum dolor sit</b>
+                    amet consectetur adipisicing elit. Doloribus sint ratione
+                    rerum voluptatum praesentium, temporibus repellat aliquid.
+                    Rerum, aliquid fugit? Perspiciatis pariatur magnam quam,
+                    nisi sint id itaque nostrum dicta reprehenderit
+                    voluptatibus, nesciunt sit perferendis beatae qui corrupti
+                    repellendus illum quos ut mollitia. Itaque cupiditate qui
+                    ullam, impedit ad sequi?
+                </p>
             </section>
             <section className="cancellation">
                 <h3>If you need to cancel your appointment...</h3>
