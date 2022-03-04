@@ -4,14 +4,20 @@
     align-items: center;
     width: 100%;
     padding: 3rem 0;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    gap: 2rem;
 }
 .options-list {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding: 1rem 0;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
+    background-color: rgb(228, 225, 212);
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    min-width: 550px;
 }
 .active {
     background-color: black;
@@ -25,6 +31,7 @@
     color: white;
 }
 .service-option label {
+    cursor: pointer;
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -36,12 +43,38 @@
 
 /* Options */
 .options-container {
-    min-height: 300px;
-    min-width: 400px;
+    min-height: 400px;
+    min-width: 550px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(228, 225, 212);
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    opacity: 0;
+}
+.short {
+    justify-content: unset;
+    gap: 0.5rem;
 }
 .option {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+.option-title {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+/* Cancellation Policy */
+.cancellation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

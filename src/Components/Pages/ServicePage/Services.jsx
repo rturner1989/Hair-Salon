@@ -7,6 +7,7 @@ import {
 } from "../../../Data/Data";
 import { selectionType } from "../../../Library/types";
 import ServiceOption from "./ServiceOption";
+import { makeID } from "./../../../Library/Helpers";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(
@@ -18,9 +19,9 @@ const Services = () => {
             case selectionType.LADIES:
                 return (
                     <div className="options-container">
-                        {optionLadies.map((option, index) => {
+                        {optionLadies.map((option) => {
                             return (
-                                <ServiceOption key={index} option={option} />
+                                <ServiceOption key={makeID()} option={option} />
                             );
                         })}
                     </div>
@@ -28,29 +29,41 @@ const Services = () => {
             case selectionType.COLOURS:
                 return (
                     <div className="options-container">
-                        {optionColour.map((option, index) => {
+                        {optionColour.map((option) => {
                             return (
-                                <ServiceOption key={index} option={option} />
+                                <ServiceOption key={makeID()} option={option} />
                             );
                         })}
                     </div>
                 );
             case selectionType.GENTS:
                 return (
-                    <div className="options-container">
-                        {optionGents.map((option, index) => {
+                    <div
+                        className={
+                            optionGents.length < 4
+                                ? "options-container short"
+                                : "options-container"
+                        }
+                    >
+                        {optionGents.map((option) => {
                             return (
-                                <ServiceOption key={index} option={option} />
+                                <ServiceOption key={makeID()} option={option} />
                             );
                         })}
                     </div>
                 );
             case selectionType.HAIRUPDO:
                 return (
-                    <div className="options-container">
-                        {optionHairUp.map((option, index) => {
+                    <div
+                        className={
+                            optionHairUp.length < 4
+                                ? "options-container short"
+                                : "options-container"
+                        }
+                    >
+                        {optionHairUp.map((option) => {
                             return (
-                                <ServiceOption key={index} option={option} />
+                                <ServiceOption key={makeID()} option={option} />
                             );
                         })}
                     </div>
@@ -59,7 +72,7 @@ const Services = () => {
     };
 
     return (
-        <div className="services-container">
+        <main className="services-container">
             <h1>My Services</h1>
             <form action="#" className="options-list">
                 <div
@@ -144,7 +157,35 @@ const Services = () => {
                 </div>
             </form>
             {serviceSelection()}
-        </div>
+            <section className="cancellation">
+                <h3>If you need to cancel your appointment...</h3>
+                <div>
+                    <p>
+                        I know life doesnt always go to plan and things come up.
+                    </p>
+                    <p>
+                        If you cant make an appointment please contact me ASAP.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Less than 24 hours notice will result in a 50% charge of
+                        the service you were booked in for.
+                    </p>
+                    <p>
+                        A no show for the appointment will be a 100% charge of
+                        the service.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Repeat offenders of no shows will not be welcome to book
+                        any future appointments.
+                    </p>
+                    <p>To cancel, please contact me directly.</p>
+                </div>
+            </section>
+        </main>
     );
 };
 

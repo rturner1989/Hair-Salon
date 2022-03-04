@@ -1,0 +1,29 @@
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
