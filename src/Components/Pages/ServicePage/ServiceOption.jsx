@@ -3,7 +3,7 @@ import React from "react";
 const ServiceOption = ({ option }) => {
     return (
         <div className="option">
-            <h3 className="option-title">{option.name}</h3>
+            <h4 className="option-title">{option.name}</h4>
             <p className="option-price">{option.price}</p>
         </div>
     );
