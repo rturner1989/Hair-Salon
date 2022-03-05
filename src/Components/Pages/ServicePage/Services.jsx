@@ -90,7 +90,7 @@ const Services = () => {
                             lifestyle.
                         </i>
                     </p>
-                    <button className="bookingBtn">Book Now</button>
+                    <button className="bookingBtn">Enquire Now</button>
                 </div>
             </section>
             <section className="service-options-container">
@@ -155,7 +155,7 @@ const Services = () => {
                 <p>&#42; Additional £10.00 for long/thick hair</p>
             </section>
             <section className="about-service-container">
-                <h3>About my Service</h3>
+                <h3>About my Services</h3>
                 <p>
                     <b>Lorem, ipsum dolor sit</b>
                     amet consectetur adipisicing elit. Doloribus sint ratione
@@ -187,32 +187,40 @@ const Services = () => {
                     ullam, impedit ad sequi?
                 </p>
             </section>
-            <section className="cancellation">
-                <h3>If you need to cancel your appointment...</h3>
-                <div>
-                    <p>
-                        I know life doesnt always go to plan and things come up.
-                    </p>
-                    <p>
-                        If you cant make an appointment please contact me ASAP.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Less than 24 hours notice will result in a 50% charge of
-                        the service you were booked in for.
-                    </p>
-                    <p>
-                        A no show for the appointment will be a 100% charge of
-                        the service.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        Repeat offenders of no shows will not be welcome to book
-                        any future appointments.
-                    </p>
-                    <p>To cancel, please contact me directly.</p>
+            <section className="cancellation-container">
+                <div className="cancellation">
+                    <h2>If You Need To Cancel Your Appointment</h2>
+                    <div>
+                        <h3>Cancelling An Appointment</h3>
+                        <p>
+                            I know life doesnt always go to plan and things come
+                            up, therefore, in consideration of my other clients,
+                        </p>
+                        <p>
+                            if you cant make an appointment please contact me
+                            ASAP.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Deposits</h3>
+                        <p>
+                            Less than 24 hours notice will result in a 50%
+                            non-refundable charge of the service you were booked
+                            in for.
+                        </p>
+                        <p>
+                            A no show for the appointment will be a 100%
+                            non-refundable charge of the service.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Future Appointments</h3>
+                        <p>
+                            Repeat offenders of no shows will not be welcome to
+                            book any future appointments.
+                        </p>
+                        <p>To cancel, please contact me directly.</p>
+                    </div>
                 </div>
             </section>
         </main>
