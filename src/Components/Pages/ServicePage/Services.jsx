@@ -80,11 +80,13 @@ const Services = () => {
                     alt=""
                 />
                 <div className="service-header-blurb">
-                    <p>Cut or Colour, Long or Short, Thick or Thin.</p>
-                    <p>
+                    <p className="blurb-line1">
+                        Cut or Colour, Long or Short, Thick or Thin.
+                    </p>
+                    <p className="blurb-line2">
                         Services for men and women with any hair type and style.
                     </p>
-                    <p>
+                    <p className="blurb-line3">
                         <i>
                             A quality service that will last through your busy
                             lifestyle.
