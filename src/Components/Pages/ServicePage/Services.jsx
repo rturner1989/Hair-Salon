@@ -8,6 +8,7 @@ import {
 import { selectionType } from "../../../Library/types";
 import ServiceOption from "./ServiceOption";
 import { makeID } from "../../../Library/Helpers";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(
@@ -92,7 +93,9 @@ const Services = () => {
                             lifestyle.
                         </i>
                     </p>
-                    <button className="bookingBtn">Enquire Now</button>
+                    <Link to="/contact">
+                        <button className="bookingBtn">Enquire Now</button>
+                    </Link>
                 </div>
             </section>
             <section className="service-options-container">

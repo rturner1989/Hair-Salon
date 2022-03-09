@@ -4,6 +4,7 @@ import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
 import "./Components/Pages/AboutPage/About.css";
 import "./Components/Pages/ServicePage/Services.css";
+import "./Components/Pages/ContactPage/Contact.css";
 import "./Animation.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";

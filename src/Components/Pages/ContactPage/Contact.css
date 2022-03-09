@@ -1,0 +1,94 @@
+/* Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+}
+/* Head */
+.contact-head {
+    border: black solid 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.contact-head div {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-head h3 {
+    font-size: 3rem;
+}
+.contact-head p {
+    font-size: 1.2rem;
+}
+/* Contact Tiles*/
+.contact-details {
+    border: red solid 1px;
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-tile {
+    border: green solid 1px;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Contact form */
+.contact-form {
+    border: solid blue 1px;
+    width: 100%;
+}
+.contact-form section {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 75px 75px 300px;
+    grid-template-areas:
+        "name phone"
+        "email email"
+        "message message";
+    min-height: 400px;
+    max-width: 800px;
+    gap: 0 0.6rem;
+}
+.contact-name {
+    grid-area: name;
+}
+.contact-email {
+    grid-area: email;
+}
+.contact-phone {
+    grid-area: phone;
+}
+.contact-message {
+    grid-area: message;
+}
+.contact-message textarea {
+    height: 100%;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.contract-entry {
+    display: flex;
+    flex-direction: column;
+}
+.contract-entry input {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
