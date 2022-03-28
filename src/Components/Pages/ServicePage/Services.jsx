@@ -77,7 +77,8 @@ const Services = () => {
             <section className="service-header">
                 <img
                     style={{ maxWidth: "50%" }}
-                    src="./Images/HairBannerService.jpg"
+                    // src="./Images/HairBannerService.jpg"
+                    src="./Images/woman-washing-head-hairsalon.jpg"
                     alt=""
                 />
                 <div className="service-header-blurb">
