@@ -1,8 +1,17 @@
 import React from "react";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
     return (
         <main className="contact-container">
+            <section className="map-container">
+                <iframe
+                    id="iframe"
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBa_ef0dKcEgR2UZygGx7Cdo&zoom=17&key=${process.env.REACT_APP_MAP_KEY}`}
+                ></iframe>{" "}
+            </section>
             <section className="contact-head">
                 <div>
                     <h3>Contact</h3>
@@ -36,27 +45,7 @@ const Contact = () => {
                     <p>Hereford, HR4 0DF</p>
                 </div>
             </section>
-            <form className="contact-form" action="">
-                <section>
-                    <label className="contact-name contract-entry" htmlFor="">
-                        <input type="text" placeholder="Name" />
-                    </label>
-                    <label className="contact-email contract-entry" htmlFor="">
-                        <input type="email" placeholder="E-Mail" />
-                    </label>
-                    <label className="contact-phone contract-entry" htmlFor="">
-                        <input type="tel" placeholder="Telephone" />
-                    </label>
-                    <label
-                        className="contact-message contract-entry"
-                        htmlFor=""
-                    >
-                        <textarea name="" placeholder="Message"></textarea>
-                    </label>
-                </section>
-                <button>Submit</button>
-            </form>
-            <section>map</section>
+            <ContactForm />
         </main>
     );
 };
