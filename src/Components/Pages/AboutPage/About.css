@@ -43,7 +43,7 @@
     text-align: center;
 }
 .about-header-img {
-    width: 100%;
+    max-width: 100%;
     position: absolute;
     z-index: 0;
     opacity: 30%;
