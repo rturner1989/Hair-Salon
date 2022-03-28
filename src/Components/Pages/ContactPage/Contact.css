@@ -5,15 +5,25 @@
     align-items: center;
     gap: 5rem;
     width: 100%;
+    padding-bottom: 5rem;
 }
 /* Head */
 .contact-head {
-    border: black solid 1px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+}
+.contact-head h3 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    min-width: 300px;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
 }
 .contact-head div {
     max-width: 400px;
@@ -30,7 +40,6 @@
 }
 /* Contact Tiles*/
 .contact-details {
-    border: red solid 1px;
     width: 100%;
     max-width: 1800px;
     display: flex;
@@ -38,7 +47,6 @@
     justify-content: space-around;
 }
 .contact-tile {
-    border: green solid 1px;
     min-width: 400px;
     min-height: 400px;
     display: flex;
@@ -46,11 +54,15 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    /* background-color: rgb(228, 225, 212, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
 }
 
 /* Contact form */
 .contact-form {
-    border: solid blue 1px;
     width: 100%;
 }
 .contact-form section {
@@ -91,4 +103,16 @@
 .contract-entry input {
     padding: 1rem;
     font-size: 1.2rem;
+}
+.submit-btn {
+    max-width: 150px;
+    padding: 0.5rem 2rem;
+}
+.map-container {
+    width: 100%;
+    min-height: 500px;
+}
+#iframe {
+    width: 100%;
+    height: 100%;
 }
