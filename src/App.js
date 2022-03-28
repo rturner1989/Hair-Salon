@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
+import "./Components/Pages/HomePage/Home.css";
 import "./Components/Pages/AboutPage/About.css";
 import "./Components/Pages/ServicePage/Services.css";
 import "./Components/Pages/ContactPage/Contact.css";
