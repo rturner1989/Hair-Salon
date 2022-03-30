@@ -7,9 +7,9 @@ const About = () => {
                 <div className="about-header-content">
                     <h1>Claire Holden</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsum, perspiciatis! Et consectetur reiciendis
-                        assumenda, maiores ad natus dolorem iusto voluptatum?
+                        A self employed professional who will go above and
+                        beyond to make your hair look and feel its best at all
+                        times.
                     </p>
                 </div>
                 <img
