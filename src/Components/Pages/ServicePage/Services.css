@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
+    /* opacity: 0;
+    animation: fadeIn 1s ease forwards; */
     gap: 5rem;
 }
 /* Header */
@@ -28,7 +28,7 @@
     width: 100%;
     padding: 2rem;
 }
-.blurb-line1 {
+/* .blurb-line1 {
     opacity: 0;
     animation: fadeIn 1s ease 0.5s forwards;
 }
@@ -39,7 +39,7 @@
 .blurb-line3 {
     opacity: 0;
     animation: fadeIn 1.5s ease 2.5s forwards;
-}
+} */
 .bookingBtn {
     padding: 0.5rem 3rem;
     font-size: 1.2rem;
@@ -48,9 +48,9 @@
     border: black solid 2px;
     background-color: rgb(216, 200, 121);
     cursor: pointer;
-    transition: all 0.3s;
+    /* transition: all 0.3s;
     opacity: 0;
-    animation: fadeIn 1s ease 3.5s forwards;
+    animation: fadeIn 1s ease 3.5s forwards; */
 }
 .bookingBtn:hover {
     background-color: black;
@@ -75,22 +75,24 @@
     text-transform: uppercase;
 }
 .service-options {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    max-width: 1400px;
+    grid-template-areas: "pic1 ladies pic2 colours" "pic3 gents pic4 hair";
+}
+.service-tile-img {
+    max-width: 100%;
 }
 .options-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    min-width: 360px;
-    min-height: 320px;
-    padding: 1rem;
+    padding: 2rem;
     background-color: rgb(228, 225, 212, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-
 .options-container h2 {
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
@@ -100,14 +102,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
 }
 .option-title {
-    letter-spacing: 0.2rem;
-    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 .option-price {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .about-service-container {
     width: 100%;

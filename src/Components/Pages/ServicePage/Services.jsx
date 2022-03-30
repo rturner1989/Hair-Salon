@@ -77,7 +77,6 @@ const Services = () => {
             <section className="service-header">
                 <img
                     style={{ maxWidth: "50%" }}
-                    // src="./Images/HairBannerService.jpg"
                     src="./Images/woman-washing-head-hairsalon.jpg"
                     alt=""
                 />
@@ -115,6 +114,11 @@ const Services = () => {
                             })}
                         </div>
                     </div>
+                    <img
+                        className="service-tile-img"
+                        src="./Images/hairdresser-cut-hair-her-client-hair-salon.jpg"
+                        alt=""
+                    />
                     <div className="options-container">
                         <h2>Colours&#42;</h2>
                         <div>
@@ -128,6 +132,16 @@ const Services = () => {
                             })}
                         </div>
                     </div>
+                    <img
+                        className="service-tile-img"
+                        src="./Images/hairdresser-does-hair-style-woman.jpg"
+                        alt=""
+                    />
+                    <img
+                        className="service-tile-img"
+                        src="./Images/stylish-man-sitting-barbershop.jpg"
+                        alt=""
+                    />
                     <div className="options-container">
                         <h2>Gents</h2>
                         <div>
@@ -141,6 +155,11 @@ const Services = () => {
                             })}
                         </div>
                     </div>
+                    <img
+                        className="service-tile-img"
+                        src="./Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg"
+                        alt=""
+                    />
                     <div className="options-container">
                         <h2>Hair Up</h2>
                         <div>
