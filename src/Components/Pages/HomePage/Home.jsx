@@ -54,14 +54,10 @@ const HomePage = () => {
                             impedit. Iure neque voluptas fugit voluptates quas.
                         </p>
                     </div>
+                    <img className="tile" src="./Images/redhead.jpg" alt="" />
                     <img
                         className="tile"
-                        src="./Images/close-up-portrait-curly-redhead-woman-with-blue-eyes.jpg"
-                        alt=""
-                    />
-                    <img
-                        className="tile"
-                        src="./Images/beauty-portrait-mystery-smiling-ginger-woman-with-long-hair-posing-sideways-looking.jpg"
+                        src="./Images/Smiling-Woman.jpg"
                         alt=""
                     />
                     <div className="tile tile-text">
