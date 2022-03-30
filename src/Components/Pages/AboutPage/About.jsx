@@ -15,7 +15,6 @@ const About = () => {
                 <img
                     className="about-header-img"
                     src="./Images/about-header.jpg"
-                    // src="./Images/about-header-BW.jpg"
                     alt=""
                 />
             </header>

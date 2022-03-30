@@ -37,7 +37,6 @@
     font-size: 2rem;
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
-    /* text-transform: uppercase; */
 }
 .contact-head p {
     font-size: 1.2rem;
@@ -71,11 +70,19 @@
     height: 100%;
 }
 /* Contact form */
-.contact-form {
+.form-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 .contact-form section {
-    margin: 0 auto;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 75px 75px 300px;
@@ -83,8 +90,8 @@
         "name phone"
         "email email"
         "message message";
-    min-height: 400px;
-    max-width: 800px;
+    min-height: 450px;
+    max-width: 1050px;
     gap: 0 0.6rem;
 }
 .contact-name {

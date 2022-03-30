@@ -5,7 +5,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 const HomePage = () => {
     return (
         <div className="homePage">
-            <section className="home-header">
+            <header className="home-header">
                 <div className="home-header-blurb-container">
                     <div className="home-header-blurb">
                         <h3>Welcome</h3>
@@ -30,7 +30,7 @@ const HomePage = () => {
                     src="./Images/BEAUTI~1 copy.jpg"
                     alt=""
                 />
-            </section>
+            </header>
             <section className="tile-section">
                 <div className="tile-container">
                     <div className="tile tile-text">

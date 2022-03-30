@@ -63,8 +63,7 @@ const Contact = () => {
                     ></iframe>
                 </div>
             </section>
-            <section>
-                <h3>Email me below ...</h3>
+            <section className="form-section">
                 <ContactForm />
             </section>
         </main>
