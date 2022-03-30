@@ -5,62 +5,71 @@
     align-items: center;
     gap: 5rem;
     width: 100%;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
 }
-/* Head */
+
+/* Contact */
+.contact-information-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "header header" "hours map";
+    width: 60%;
+    max-width: 1200px;
+    min-height: 600px;
+    max-height: 700px;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+    gap: 0rem 2rem;
+}
+/* Contact Head */
 .contact-head {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-.contact-head h3 {
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 1rem;
-    min-width: 300px;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    font-family: "Archivo", sans-serif;
-    text-transform: uppercase;
-}
-.contact-head div {
-    max-width: 400px;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 .contact-head h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    /* text-transform: uppercase; */
 }
 .contact-head p {
     font-size: 1.2rem;
 }
-/* Contact Tiles*/
+/* Contact details */
 .contact-details {
-    width: 100%;
-    max-width: 1800px;
+    grid-area: hours;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 .contact-tile {
-    min-width: 400px;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
-    /* background-color: rgb(228, 225, 212, 0.5); */
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    color: white;
 }
-
+.contact-hours p {
+    display: flex;
+    justify-content: space-between;
+}
+/* Google Maps */
+.map-container {
+    grid-area: map;
+    width: 100%;
+    padding: 1rem 0;
+}
+#iframe {
+    width: 100%;
+    height: 100%;
+}
 /* Contact form */
 .contact-form {
     width: 100%;
@@ -107,12 +116,4 @@
 .submit-btn {
     max-width: 150px;
     padding: 0.5rem 2rem;
-}
-.map-container {
-    width: 100%;
-    min-height: 500px;
-}
-#iframe {
-    width: 100%;
-    height: 100%;
 }
