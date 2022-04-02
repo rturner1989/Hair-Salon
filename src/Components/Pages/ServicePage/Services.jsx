@@ -77,7 +77,10 @@ const Services = () => {
             <section className="service-header">
                 <img
                     style={{ maxWidth: "50%" }}
-                    src="./Images/woman-washing-head-hairsalon.jpg"
+                    src={
+                        process.env.PUBLIC_URL +
+                        "/Images/woman-washing-head-hairsalon.jpg"
+                    }
                     alt=""
                 />
                 <div className="service-header-blurb">
@@ -116,7 +119,10 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src="./Images/hairdresser-cut-hair-her-client-hair-salon.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/hairdresser-cut-hair-her-client-hair-salon.jpg"
+                        }
                         alt=""
                     />
                     <div className="options-container">
@@ -134,12 +140,18 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src="./Images/hairdresser-does-hair-style-woman.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/hairdresser-does-hair-style-woman.jpg"
+                        }
                         alt=""
                     />
                     <img
                         className="service-tile-img"
-                        src="./Images/stylish-man-sitting-barbershop.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/stylish-man-sitting-barbershop.jpg"
+                        }
                         alt=""
                     />
                     <div className="options-container">
@@ -157,7 +169,10 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src="./Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg"
+                        }
                         alt=""
                     />
                     <div className="options-container">

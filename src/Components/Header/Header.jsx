@@ -8,7 +8,8 @@ const Header = () => {
                 <p>07801 899 240</p>
                 <img
                     className="nav-img"
-                    src="./Images/logo.png"
+                    // src="./Images/logo.png"
+                    src={process.env.PUBLIC_URL + "/Images/logo.png"}
                     alt="Header Logo"
                     role="presentation"
                 />

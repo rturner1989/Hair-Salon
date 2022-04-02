@@ -27,7 +27,7 @@ const HomePage = () => {
                 </div>
                 <img
                     className="home-header-img"
-                    src="./Images/BEAUTI~1 copy.jpg"
+                    src={process.env.PUBLIC_URL + "/Images/BEAUTI~1 copy.jpg"}
                     alt=""
                 />
             </header>
@@ -43,7 +43,10 @@ const HomePage = () => {
                     </div>
                     <img
                         className="tile"
-                        src="./Images/composition-with-hair-extension-accessories-dark-background.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/composition-with-hair-extension-accessories-dark-background.jpg"
+                        }
                         alt=""
                     />
                     <div className="tile tile-text">
@@ -54,10 +57,16 @@ const HomePage = () => {
                             impedit. Iure neque voluptas fugit voluptates quas.
                         </p>
                     </div>
-                    <img className="tile" src="./Images/redhead.jpg" alt="" />
                     <img
                         className="tile"
-                        src="./Images/Smiling-Woman.jpg"
+                        src={process.env.PUBLIC_URL + "/Images/redhead.jpg"}
+                        alt=""
+                    />
+                    <img
+                        className="tile"
+                        src={
+                            process.env.PUBLIC_URL + "/Images/Smiling-Woman.jpg"
+                        }
                         alt=""
                     />
                     <div className="tile tile-text">
@@ -70,7 +79,10 @@ const HomePage = () => {
                     </div>
                     <img
                         className="tile"
-                        src="./Images/woman-mixing-hair-dye-bowl.jpg"
+                        src={
+                            process.env.PUBLIC_URL +
+                            "/Images/woman-mixing-hair-dye-bowl.jpg"
+                        }
                         alt=""
                     />
                     <div className="tile tile-text">

@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 <img
                     className="about-header-img"
-                    src="./Images/about-header.jpg"
+                    src={process.env.PUBLIC_URL + "/Images/about-header.jpg"}
                     alt=""
                 />
             </header>
@@ -23,7 +23,9 @@ const About = () => {
                     <img
                         className="about-img"
                         style={{ maxWidth: 300 }}
-                        src="./Images/claire-about.jpg"
+                        src={
+                            process.env.PUBLIC_URL + "/Images/claire-about.jpg"
+                        }
                         alt=""
                     />
                     <div className="basic-info-text-container">
