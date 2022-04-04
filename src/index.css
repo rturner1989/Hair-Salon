@@ -6,6 +6,7 @@
 }
 :root {
     --backgroundColor: rgb(231, 225, 194);
+    --strongGold: rgb(216, 200, 121);
 }
 html,
 body {
