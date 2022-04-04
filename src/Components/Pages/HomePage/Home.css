@@ -84,6 +84,8 @@
 .review {
     display: flex;
     flex-direction: column;
+    background-color: white;
+    padding: 2rem;
 }
 .review-content {
     font-size: 1.4rem;

@@ -4,20 +4,22 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const HomePage = () => {
     return (
-        <div className="homePage">
+        <main className="homePage">
             <header className="home-header">
                 <div className="home-header-blurb-container">
                     <div className="home-header-blurb">
                         <h3>Welcome</h3>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Eligendi reprehenderit placeat vitae est ea
-                            similique.
+                            A warm welcome to all my customers! My name is
+                            Claire Holden and I pride myself in giving a
+                            personalised and quality service that will leave you
+                            feeling exquisite.
                         </p>
                         <p>
                             <i>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Quaerat, deleniti.
+                                HBA Hair & Beauty Finalist
+                                <br />
+                                Hair Stylist of the year 2022
                             </i>
                         </p>
                         <Link to="/contact">
@@ -36,9 +38,9 @@ const HomePage = () => {
                     <div className="tile tile-text">
                         <h4>Quality Service</h4>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Nam adipisci accusantium laboriosam molestiae
-                            impedit. Iure neque voluptas fugit voluptates quas.
+                            I pride myself in taking care of each of my clients,
+                            listening to any concerns you may have and adapting
+                            my technique to leave you feeling wonderful.
                         </p>
                     </div>
                     <img
@@ -52,9 +54,8 @@ const HomePage = () => {
                     <div className="tile tile-text">
                         <h4>Any Type of Hair</h4>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Nam adipisci accusantium laboriosam molestiae
-                            impedit. Iure neque voluptas fugit voluptates quas.
+                            Curly, Straight, Long or Short. All hair types are
+                            welcome.
                         </p>
                     </div>
                     <img
@@ -71,11 +72,7 @@ const HomePage = () => {
                     />
                     <div className="tile tile-text">
                         <h4>Great Prices</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Nam adipisci accusantium laboriosam molestiae
-                            impedit. Iure neque voluptas fugit voluptates quas.
-                        </p>
+                        <p>A price to match any service needed.</p>
                     </div>
                     <img
                         className="tile"
@@ -88,9 +85,9 @@ const HomePage = () => {
                     <div className="tile tile-text">
                         <h4>The Best Tools for the Job</h4>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Nam adipisci accusantium laboriosam molestiae
-                            impedit. Iure neque voluptas fugit voluptates quas.
+                            Employing the latest techniques, no job is too big
+                            for me. Only the best equipment is used to ensure a
+                            quality service throughout.
                         </p>
                     </div>
                 </div>
@@ -100,7 +97,7 @@ const HomePage = () => {
                     This is what my clients have said...
                 </h3>
                 <div className="reviews-container">
-                    <div className="review">
+                    <div className="review review1">
                         <ImQuotesLeft className="review-icon icon-left" />
                         <p className="review-content">
                             Had my hair done by Claire for colour correction (by
@@ -110,7 +107,7 @@ const HomePage = () => {
                         </p>
                         <ImQuotesRight className="review-icon icon-right" />
                     </div>
-                    <div className="review">
+                    <div className="review review2">
                         <ImQuotesLeft className="review-icon icon-left" />
                         <p className="review-content">
                             Was lucky enough to win a competition for a hair
@@ -120,7 +117,7 @@ const HomePage = () => {
                         </p>
                         <ImQuotesRight className="review-icon icon-right" />
                     </div>
-                    <div className="review">
+                    <div className="review review3">
                         <ImQuotesLeft className="review-icon icon-left" />
                         <p className="review-content">
                             Claire is amazing with hair. She created the most
@@ -132,7 +129,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     );
 };
 

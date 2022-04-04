@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="about-container">
+        <main className="about-container">
             <header className="about-header-container">
                 <div className="about-header-content">
                     <h1>Claire Holden</h1>
@@ -18,7 +18,7 @@ const About = () => {
                     alt=""
                 />
             </header>
-            <main className="about-content-container">
+            <div className="about-content-container">
                 <aside className="about-basic-info">
                     <img
                         className="about-img"
@@ -99,8 +99,8 @@ const About = () => {
                         </p>
                     </div>
                 </section>
-            </main>
-        </div>
+            </div>
+        </main>
     );
 };
 
