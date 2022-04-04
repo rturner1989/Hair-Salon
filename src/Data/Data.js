@@ -32,3 +32,48 @@ export const optionHairUp = [
     { name: "Hair Up Do", price: "£30.00" },
     { name: "Bridal", price: "On Request" },
 ];
+
+export const homeTiles = [
+    {
+        title: "Quality Service",
+        blurb: "I pride myself in taking care of each of my clients, listening to any concerns you may have and adapting my technique to leave you feeling wonderful.",
+        img: "/Images/composition-with-hair-extension-accessories-dark-background.jpg",
+        imgAlt: "",
+        innerText: "Hello World",
+    },
+    {
+        title: "Any Type of Hair",
+        blurb: "Curly, Straight, Long or Short. All hair types are welcome.",
+        img: "/Images/redhead.jpg",
+        imgAlt: "",
+        innerText: "Hello World",
+    },
+    {
+        title: "Great Prices",
+        blurb: "A price to match any service needed.",
+        img: "/Images/Smiling-Woman.jpg",
+        innerText: "Hello World",
+        imgAlt: "",
+        reverse: "reverse",
+    },
+    {
+        title: "The Best Tools for the Job",
+        blurb: "Employing the latest techniques, no job is too big for me. Only the best equipment is used to ensure a quality service throughout.",
+        img: "/Images/woman-mixing-hair-dye-bowl.jpg",
+        innerText: "Hello World",
+        imgAlt: "",
+        reverse: "reverse",
+    },
+];
+
+export const reviewQuote = [
+    {
+        review: "Had my hair done by Claire for colour correction (by a different salon) Claire did an amazing job and I can’t wait for my next appointment, super talented and an excellent hairdresser 😍",
+    },
+    {
+        review: "Was lucky enough to win a competition for a hair treatment with cut and blow dry. Lovely products used and really pleased with the result. Would def recommend Claire. thank you again x",
+    },
+    {
+        review: "Claire is amazing with hair. She created the most amazing colour for me. Honestly would recommend Claire to anyone looking for any kind of cut or colour x",
+    },
+];
