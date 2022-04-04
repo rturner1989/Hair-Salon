@@ -64,6 +64,7 @@ const Contact = () => {
                 </div>
             </section>
             <section className="form-section">
+                <h2>Send me a message</h2>
                 <ContactForm />
             </section>
         </main>

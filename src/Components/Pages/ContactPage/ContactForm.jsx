@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
@@ -8,6 +8,7 @@ export const ContactForm = () => {
         email: "",
         message: "",
     });
+    const [isSubmit, setIsSubmit] = useState(false);
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -32,7 +33,17 @@ export const ContactForm = () => {
             email: "",
             message: "",
         });
+        setIsSubmit(true);
     };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsSubmit(false);
+        }, 3000);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [isSubmit]);
 
     const onChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -40,8 +51,9 @@ export const ContactForm = () => {
 
     return (
         <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
+            {isSubmit && <h3 className="form-submit-msg">Form Submitted</h3>}
             <section>
-                <label className="contact-name contract-entry" htmlFor="">
+                <label className="contact-name contact-entry" htmlFor="">
                     <input
                         name="from_name"
                         type="text"
@@ -51,7 +63,7 @@ export const ContactForm = () => {
                         onChange={onChange}
                     />
                 </label>
-                <label className="contact-phone contract-entry" htmlFor="">
+                <label className="contact-phone contact-entry" htmlFor="">
                     <input
                         name="phone"
                         value={formData.phone}
@@ -61,7 +73,7 @@ export const ContactForm = () => {
                         onChange={onChange}
                     />
                 </label>
-                <label className="contact-email contract-entry" htmlFor="">
+                <label className="contact-email contact-entry" htmlFor="">
                     <input
                         name="email"
                         type="email"
@@ -71,7 +83,7 @@ export const ContactForm = () => {
                         onChange={onChange}
                     />
                 </label>
-                <label className="contact-message contract-entry" htmlFor="">
+                <label className="contact-message contact-entry" htmlFor="">
                     <textarea
                         value={formData.message}
                         name="message"
