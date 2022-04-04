@@ -1,8 +1,15 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const HomePage = () => {
+    const [isTileHover, setIsTileHover] = useState({
+        img1: false,
+        img2: false,
+        img3: false,
+        img4: false,
+    });
+
     return (
         <main className="homePage">
             <header className="home-header">
@@ -43,14 +50,29 @@ const HomePage = () => {
                             my technique to leave you feeling wonderful.
                         </p>
                     </div>
-                    <img
+                    <div
                         className="tile"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/composition-with-hair-extension-accessories-dark-background.jpg"
-                        }
-                        alt=""
-                    />
+                        onMouseEnter={() => setIsTileHover({ img1: true })}
+                        onMouseLeave={() => setIsTileHover({ img1: false })}
+                    >
+                        <img
+                            className="tile-img"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/Images/composition-with-hair-extension-accessories-dark-background.jpg"
+                            }
+                            alt=""
+                        />
+                        <div
+                            className={
+                                isTileHover.img1
+                                    ? "tile-hover active"
+                                    : "tile-hover"
+                            }
+                        >
+                            <p>Hello World</p>
+                        </div>
+                    </div>
                     <div className="tile tile-text">
                         <h4>Any Type of Hair</h4>
                         <p>
@@ -58,30 +80,76 @@ const HomePage = () => {
                             welcome.
                         </p>
                     </div>
-                    <img
+                    <div
                         className="tile"
-                        src={process.env.PUBLIC_URL + "/Images/redhead.jpg"}
-                        alt=""
-                    />
-                    <img
+                        onMouseEnter={() => setIsTileHover({ img2: true })}
+                        onMouseLeave={() => setIsTileHover({ img2: false })}
+                    >
+                        <img
+                            className="tile-img"
+                            src={process.env.PUBLIC_URL + "/Images/redhead.jpg"}
+                            alt=""
+                        />
+                        <div
+                            className={
+                                isTileHover.img2
+                                    ? "tile-hover active"
+                                    : "tile-hover"
+                            }
+                        >
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                    <div
                         className="tile"
-                        src={
-                            process.env.PUBLIC_URL + "/Images/Smiling-Woman.jpg"
-                        }
-                        alt=""
-                    />
+                        onMouseEnter={() => setIsTileHover({ img3: true })}
+                        onMouseLeave={() => setIsTileHover({ img3: false })}
+                    >
+                        <img
+                            className="tile-img"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/Images/Smiling-Woman.jpg"
+                            }
+                            alt=""
+                        />
+                        <div
+                            className={
+                                isTileHover.img3
+                                    ? "tile-hover active"
+                                    : "tile-hover"
+                            }
+                        >
+                            <p>Hello World</p>
+                        </div>
+                    </div>
                     <div className="tile tile-text">
                         <h4>Great Prices</h4>
                         <p>A price to match any service needed.</p>
                     </div>
-                    <img
+                    <div
                         className="tile"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/woman-mixing-hair-dye-bowl.jpg"
-                        }
-                        alt=""
-                    />
+                        onMouseEnter={() => setIsTileHover({ img4: true })}
+                        onMouseLeave={() => setIsTileHover({ img4: false })}
+                    >
+                        <img
+                            className="tile-img"
+                            src={
+                                process.env.PUBLIC_URL +
+                                "/Images/woman-mixing-hair-dye-bowl.jpg"
+                            }
+                            alt=""
+                        />
+                        <div
+                            className={
+                                isTileHover.img4
+                                    ? "tile-hover active"
+                                    : "tile-hover"
+                            }
+                        >
+                            <p>Hello World</p>
+                        </div>
+                    </div>
                     <div className="tile tile-text">
                         <h4>The Best Tools for the Job</h4>
                         <p>
