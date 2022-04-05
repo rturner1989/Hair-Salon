@@ -94,6 +94,16 @@
     /* transform: translateX(-500px); */
     /* animation: fadeRight 0.5s ease 1.5s forwards; */
 }
+.about-indepth-info h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
 .indepth-paragraph {
     display: flex;
     flex-direction: column;

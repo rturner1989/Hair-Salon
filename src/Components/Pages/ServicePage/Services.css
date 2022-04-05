@@ -68,11 +68,12 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 1rem;
-    min-width: 300px;
     text-align: center;
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
+    font-size: 1.6rem;
+    min-width: 300px;
 }
 .service-options {
     display: grid;
@@ -121,6 +122,7 @@
     align-items: center;
 }
 .about-service-container h3 {
+    font-size: 1.4rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 1rem;
@@ -144,6 +146,18 @@
     gap: 1rem;
     background-color: rgb(228, 225, 212, 0.5);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+.cancellation h2 {
+    align-self: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    max-width: 800px;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 .cancellation div {
     display: flex;

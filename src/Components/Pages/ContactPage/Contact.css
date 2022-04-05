@@ -28,10 +28,12 @@
     align-self: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
     width: 100%;
 }
 .contact-head h3 {
@@ -95,14 +97,15 @@
 }
 .form-section h2 {
     text-align: center;
-    font-size: 2rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    font-size: 1.6rem;
     width: 50%;
-    line-height: 5rem;
 }
 .contact-form {
     display: flex;
