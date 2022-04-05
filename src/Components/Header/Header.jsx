@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./../../Images/logo.png";
 
 const Header = () => {
     return (
@@ -8,8 +9,7 @@ const Header = () => {
                 <p>07801 899 240</p>
                 <img
                     className="nav-img"
-                    // src="./Images/logo.png"
-                    src={process.env.PUBLIC_URL + "/Images/logo.png"}
+                    src={logo}
                     alt="Header Logo"
                     role="presentation"
                 />

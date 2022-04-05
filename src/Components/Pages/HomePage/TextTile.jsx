@@ -20,11 +20,7 @@ const TextTile = ({ tile }) => {
                 onMouseEnter={toggleHover}
                 onMouseLeave={() => setIsTileHover(false)}
             >
-                <img
-                    className="tile-img"
-                    src={process.env.PUBLIC_URL + img}
-                    alt={imgAlt}
-                />
+                <img className="tile-img" src={img} alt={imgAlt} />
                 <div
                     className={isTileHover ? "tile-hover active" : "tile-hover"}
                 >

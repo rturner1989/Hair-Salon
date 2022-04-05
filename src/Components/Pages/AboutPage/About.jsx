@@ -1,4 +1,6 @@
 import React from "react";
+import aboutHero from "./../../../Images/about-header.jpg";
+import portraitImg from "./../../../Images/claire-about.jpg";
 
 const About = () => {
     return (
@@ -12,20 +14,14 @@ const About = () => {
                         times.
                     </p>
                 </div>
-                <img
-                    className="about-header-img"
-                    src={process.env.PUBLIC_URL + "/Images/about-header.jpg"}
-                    alt=""
-                />
+                <img className="about-header-img" src={aboutHero} alt="" />
             </header>
             <div className="about-content-container">
                 <aside className="about-basic-info">
                     <img
                         className="about-img"
                         style={{ maxWidth: 300 }}
-                        src={
-                            process.env.PUBLIC_URL + "/Images/claire-about.jpg"
-                        }
+                        src={portraitImg}
                         alt=""
                     />
                     <div className="basic-info-text-container">

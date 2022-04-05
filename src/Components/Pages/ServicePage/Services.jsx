@@ -9,6 +9,11 @@ import { selectionType } from "../../../Library/types";
 import ServiceOption from "./ServiceOption";
 import { makeID } from "../../../Library/Helpers";
 import { Link } from "react-router-dom";
+import serviceHero from "./../../../Images/woman-washing-head-hairsalon.jpg";
+import ladiesServiceImg from "./../../../Images/hairdresser-cut-hair-her-client-hair-salon.jpg";
+import colorServiceImg from "./../../../Images/hairdresser-does-hair-style-woman.jpg";
+import gentsServiceImg from "./../../../Images/stylish-man-sitting-barbershop.jpg";
+import bridalServiceImg from "./../../../Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(
@@ -75,14 +80,7 @@ const Services = () => {
     return (
         <main className="services-container">
             <section className="service-header">
-                <img
-                    style={{ maxWidth: "50%" }}
-                    src={
-                        process.env.PUBLIC_URL +
-                        "/Images/woman-washing-head-hairsalon.jpg"
-                    }
-                    alt=""
-                />
+                <img style={{ maxWidth: "50%" }} src={serviceHero} alt="" />
                 <div className="service-header-blurb">
                     <p className="blurb-line1">
                         Cut or Colour, Long or Short, Thick or Thin.
@@ -119,10 +117,7 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/hairdresser-cut-hair-her-client-hair-salon.jpg"
-                        }
+                        src={ladiesServiceImg}
                         alt=""
                     />
                     <div className="options-container">
@@ -140,18 +135,12 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/hairdresser-does-hair-style-woman.jpg"
-                        }
+                        src={colorServiceImg}
                         alt=""
                     />
                     <img
                         className="service-tile-img"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/stylish-man-sitting-barbershop.jpg"
-                        }
+                        src={gentsServiceImg}
                         alt=""
                     />
                     <div className="options-container">
@@ -169,10 +158,7 @@ const Services = () => {
                     </div>
                     <img
                         className="service-tile-img"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg"
-                        }
+                        src={bridalServiceImg}
                         alt=""
                     />
                     <div className="options-container">

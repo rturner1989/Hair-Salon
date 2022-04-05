@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { homeTiles, reviewQuote } from "../../../Data/Data";
 import Quote from "./Quote";
 import TextTile from "./TextTile";
+import headerImg from "./../../../Images/BEAUTI~1 copy.jpg";
 
 const HomePage = () => {
     return (
@@ -29,11 +30,7 @@ const HomePage = () => {
                         </Link>
                     </div>
                 </div>
-                <img
-                    className="home-header-img"
-                    src={process.env.PUBLIC_URL + "/Images/BEAUTI~1 copy.jpg"}
-                    alt=""
-                />
+                <img className="home-header-img" src={headerImg} alt="" />
             </header>
             <section className="tile-section">
                 <div className="tile-container">

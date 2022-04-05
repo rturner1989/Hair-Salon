@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import logo from "./../../Images/logo.png";
 
 const Footer = () => {
     return (
@@ -7,7 +8,7 @@ const Footer = () => {
             <div className="footer-img-container">
                 <img
                     className="footer-img"
-                    src={process.env.PUBLIC_URL + "/Images/logo.png"}
+                    src={logo}
                     alt="Footer Logo"
                     role="presentation"
                 />

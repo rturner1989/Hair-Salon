@@ -2,6 +2,8 @@ import React from "react";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
+    const mapURL = `https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBa_ef0dKcEgR2UZygGx7Cdo&zoom=17&key=${process.env.REACT_APP_MAP_KEY}`;
+
     return (
         <main className="contact-container">
             <section className="contact-information-container">
@@ -54,7 +56,7 @@ const Contact = () => {
                         id="iframe"
                         style={{ border: 0 }}
                         loading="lazy"
-                        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBa_ef0dKcEgR2UZygGx7Cdo&zoom=17&key=${process.env.REACT_APP_MAP_KEY}`}
+                        src={mapURL}
                     ></iframe>
                 </div>
             </section>

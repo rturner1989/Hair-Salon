@@ -1,3 +1,8 @@
+import serviceImg from "./../Images/composition-with-hair-extension-accessories-dark-background.jpg";
+import hairTypeImg from "./../Images/redhead.jpg";
+import priceImg from "./../Images/Smiling-Woman.jpg";
+import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.jpg";
+
 export const optionLadies = [
     { name: "Wash, Cut & Finish", price: "£32.00" },
     { name: "Restyle", price: "£37.00" },
@@ -37,21 +42,21 @@ export const homeTiles = [
     {
         title: "Quality Service",
         blurb: "I pride myself in taking care of each of my clients, listening to any concerns you may have and adapting my technique to leave you feeling wonderful.",
-        img: "/Images/composition-with-hair-extension-accessories-dark-background.jpg",
+        img: serviceImg,
         imgAlt: "",
         innerText: "Hello World",
     },
     {
         title: "Any Type of Hair",
         blurb: "Curly, Straight, Long or Short. All hair types are welcome.",
-        img: "/Images/redhead.jpg",
+        img: hairTypeImg,
         imgAlt: "",
         innerText: "Hello World",
     },
     {
         title: "Great Prices",
         blurb: "A price to match any service needed.",
-        img: "/Images/Smiling-Woman.jpg",
+        img: priceImg,
         innerText: "Hello World",
         imgAlt: "",
         reverse: "reverse",
@@ -59,7 +64,7 @@ export const homeTiles = [
     {
         title: "The Best Tools for the Job",
         blurb: "Employing the latest techniques, no job is too big for me. Only the best equipment is used to ensure a quality service throughout.",
-        img: "/Images/woman-mixing-hair-dye-bowl.jpg",
+        img: toolsImg,
         innerText: "Hello World",
         imgAlt: "",
         reverse: "reverse",
