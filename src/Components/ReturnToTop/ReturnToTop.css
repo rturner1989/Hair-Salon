@@ -1,0 +1,29 @@
+.top-of-page {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+}
+.top-of-page:hover {
+    opacity: 1;
+}
+.top-of-page-svg {
+    font-size: 3rem;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

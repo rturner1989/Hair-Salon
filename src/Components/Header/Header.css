@@ -96,5 +96,6 @@
     text-decoration: none;
     z-index: 100;
     width: 100%;
+    transition: all 0.3s ease;
     font-family: "Archivo", sans-serif;
 }
