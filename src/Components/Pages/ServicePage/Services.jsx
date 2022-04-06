@@ -1,81 +1,71 @@
 import React, { useState } from "react";
-import {
-    optionColour,
-    optionGents,
-    optionHairUp,
-    optionLadies,
-} from "../../../Data/Data";
+import { services } from "../../../Data/Data";
 import { selectionType } from "../../../Library/types";
-import ServiceOption from "./ServiceOption";
-import { makeID } from "../../../Library/Helpers";
 import { Link } from "react-router-dom";
 import serviceHero from "./../../../Images/woman-washing-head-hairsalon.webp";
-import ladiesServiceImg from "./../../../Images/female-cutting.webp";
-import colorServiceImg from "./../../../Images/hairdresser-does-hair-style-woman.webp";
-import gentsServiceImg from "./../../../Images/stylish-man-sitting-barbershop.webp";
-import bridalServiceImg from "./../../../Images/wedding-hair.webp";
+import ServiceTile from "./ServiceTile";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(
         selectionType.LADIES
     );
 
-    const serviceSelection = () => {
-        switch (selectedService) {
-            case selectionType.LADIES:
-                return (
-                    <div className="options-container">
-                        {optionLadies.map((option) => {
-                            return (
-                                <ServiceOption key={makeID()} option={option} />
-                            );
-                        })}
-                    </div>
-                );
-            case selectionType.COLOURS:
-                return (
-                    <div className="options-container">
-                        {optionColour.map((option) => {
-                            return (
-                                <ServiceOption key={makeID()} option={option} />
-                            );
-                        })}
-                    </div>
-                );
-            case selectionType.GENTS:
-                return (
-                    <div
-                        className={
-                            optionGents.length < 4
-                                ? "options-container short"
-                                : "options-container"
-                        }
-                    >
-                        {optionGents.map((option) => {
-                            return (
-                                <ServiceOption key={makeID()} option={option} />
-                            );
-                        })}
-                    </div>
-                );
-            case selectionType.HAIRUPDO:
-                return (
-                    <div
-                        className={
-                            optionHairUp.length < 4
-                                ? "options-container short"
-                                : "options-container"
-                        }
-                    >
-                        {optionHairUp.map((option) => {
-                            return (
-                                <ServiceOption key={makeID()} option={option} />
-                            );
-                        })}
-                    </div>
-                );
-        }
-    };
+    // const serviceSelection = () => {
+    //     switch (selectedService) {
+    //         case selectionType.LADIES:
+    //             return (
+    //                 <div className="options-container">
+    //                     {optionLadies.map((option) => {
+    //                         return (
+    //                             <ServiceOption key={makeID()} option={option} />
+    //                         );
+    //                     })}
+    //                 </div>
+    //             );
+    //         case selectionType.COLOURS:
+    //             return (
+    //                 <div className="options-container">
+    //                     {optionColour.map((option) => {
+    //                         return (
+    //                             <ServiceOption key={makeID()} option={option} />
+    //                         );
+    //                     })}
+    //                 </div>
+    //             );
+    //         case selectionType.GENTS:
+    //             return (
+    //                 <div
+    //                     className={
+    //                         optionGents.length < 4
+    //                             ? "options-container short"
+    //                             : "options-container"
+    //                     }
+    //                 >
+    //                     {optionGents.map((option) => {
+    //                         return (
+    //                             <ServiceOption key={makeID()} option={option} />
+    //                         );
+    //                     })}
+    //                 </div>
+    //             );
+    //         case selectionType.HAIRUPDO:
+    //             return (
+    //                 <div
+    //                     className={
+    //                         optionHairUp.length < 4
+    //                             ? "options-container short"
+    //                             : "options-container"
+    //                     }
+    //                 >
+    //                     {optionHairUp.map((option) => {
+    //                         return (
+    //                             <ServiceOption key={makeID()} option={option} />
+    //                         );
+    //                     })}
+    //                 </div>
+    //             );
+    //     }
+    // };
 
     return (
         <main className="services-container">
@@ -102,78 +92,9 @@ const Services = () => {
             <section className="service-options-container">
                 <h1>Services</h1>
                 <div className="service-options">
-                    <div className="options-container">
-                        <h2>Ladies</h2>
-                        <div>
-                            {optionLadies.map((option) => {
-                                return (
-                                    <ServiceOption
-                                        key={makeID()}
-                                        option={option}
-                                    />
-                                );
-                            })}
-                        </div>
-                    </div>
-                    <img
-                        className="service-tile-img"
-                        src={ladiesServiceImg}
-                        alt=""
-                    />
-                    <div className="options-container">
-                        <h2>Colours&#42;</h2>
-                        <div>
-                            {optionColour.map((option) => {
-                                return (
-                                    <ServiceOption
-                                        key={makeID()}
-                                        option={option}
-                                    />
-                                );
-                            })}
-                        </div>
-                    </div>
-                    <img
-                        className="service-tile-img"
-                        src={colorServiceImg}
-                        alt=""
-                    />
-                    <img
-                        className="service-tile-img"
-                        src={gentsServiceImg}
-                        alt=""
-                    />
-                    <div className="options-container">
-                        <h2>Gents</h2>
-                        <div>
-                            {optionGents.map((option) => {
-                                return (
-                                    <ServiceOption
-                                        key={makeID()}
-                                        option={option}
-                                    />
-                                );
-                            })}
-                        </div>
-                    </div>
-                    <img
-                        className="service-tile-img"
-                        src={bridalServiceImg}
-                        alt=""
-                    />
-                    <div className="options-container">
-                        <h2>Hair Up</h2>
-                        <div>
-                            {optionHairUp.map((option) => {
-                                return (
-                                    <ServiceOption
-                                        key={makeID()}
-                                        option={option}
-                                    />
-                                );
-                            })}
-                        </div>
-                    </div>
+                    {services.map((service) => {
+                        return <ServiceTile tile={service} />;
+                    })}
                 </div>
             </section>
             <section>
