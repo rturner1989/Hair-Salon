@@ -9,11 +9,11 @@ import { selectionType } from "../../../Library/types";
 import ServiceOption from "./ServiceOption";
 import { makeID } from "../../../Library/Helpers";
 import { Link } from "react-router-dom";
-import serviceHero from "./../../../Images/woman-washing-head-hairsalon.jpg";
-import ladiesServiceImg from "./../../../Images/hairdresser-cut-hair-her-client-hair-salon.jpg";
-import colorServiceImg from "./../../../Images/hairdresser-does-hair-style-woman.jpg";
-import gentsServiceImg from "./../../../Images/stylish-man-sitting-barbershop.jpg";
-import bridalServiceImg from "./../../../Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg";
+import serviceHero from "./../../../Images/woman-washing-head-hairsalon.webp";
+import ladiesServiceImg from "./../../../Images/hairdresser-cut-hair-her-client-hair-salon.webp";
+import colorServiceImg from "./../../../Images/hairdresser-does-hair-style-woman.webp";
+import gentsServiceImg from "./../../../Images/stylish-man-sitting-barbershop.webp";
+import bridalServiceImg from "./../../../Images/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.webp";
 
 const Services = () => {
     const [selectedService, setSelectedService] = useState(

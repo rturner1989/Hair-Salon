@@ -1,7 +1,7 @@
-import serviceImg from "./../Images/composition-with-hair-extension-accessories-dark-background.jpg";
-import hairTypeImg from "./../Images/redhead.jpg";
-import priceImg from "./../Images/Smiling-Woman.jpg";
-import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.jpg";
+import serviceImg from "./../Images/composition-with-hair-extension-accessories-dark-background.webp";
+import hairTypeImg from "./../Images/redhead.webp";
+import priceImg from "./../Images/Smiling-Woman.webp";
+import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.webp";
 
 export const optionLadies = [
     { name: "Wash, Cut & Finish", price: "£32.00" },

@@ -1,6 +1,6 @@
 import React from "react";
-import aboutHero from "./../../../Images/about-header.jpg";
-import portraitImg from "./../../../Images/claire-about.jpg";
+import aboutHero from "./../../../Images/about-header.webp";
+import portraitImg from "./../../../Images/claire-about.webp";
 
 const About = () => {
     return (
