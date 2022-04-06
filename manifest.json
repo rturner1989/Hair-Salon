@@ -1,0 +1,9 @@
+{
+    "short_name": "Hair Stylist",
+    "name": "Claire Holden - Hair Stylist",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
