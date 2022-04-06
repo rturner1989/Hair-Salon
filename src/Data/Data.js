@@ -1,4 +1,4 @@
-import serviceImg from "./../Images/composition-with-hair-extension-accessories-dark-background.webp";
+import serviceImg from "./../Images/hair-tools.webp";
 import hairTypeImg from "./../Images/redhead.webp";
 import priceImg from "./../Images/Smiling-Woman.webp";
 import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.webp";
