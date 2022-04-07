@@ -1,31 +1,13 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { homeTiles, reviewQuote } from "../../../Data/Data";
 import Quote from "./Quote";
 import TextTile from "./TextTile";
 import headerImg from "./../../../Images/BEAUTI~1 copy.webp";
-import ReturnToTop from "../../ReturnToTop/ReturnToTop";
-import useWindowDimensions from "../../../Hooks/useWindowDimensions";
 
 const HomePage = () => {
-    const [showScroll, setShowScroll] = useState(false);
-    const [windowDimensions] = useWindowDimensions();
-
-    const homeScroll = useRef();
-
     return (
-        <main
-            className="homePage"
-            onScroll={() => {
-                if (windowDimensions.width > 926) {
-                    if (homeScroll.current.scrollTop <= 0) {
-                        setShowScroll(false);
-                    } else {
-                        setShowScroll(true);
-                    }
-                }
-            }}
-        >
+        <main className="homePage">
             <header className="home-header">
                 <div className="home-header-blurb-container">
                     <div className="home-header-blurb">
@@ -67,7 +49,6 @@ const HomePage = () => {
                     })}
                 </div>
             </section>
-            <ReturnToTop />
         </main>
     );
 };

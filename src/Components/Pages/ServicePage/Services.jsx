@@ -93,7 +93,9 @@ const Services = () => {
                 <h1>Services</h1>
                 <div className="service-options">
                     {services.map((service) => {
-                        return <ServiceTile tile={service} />;
+                        return (
+                            <ServiceTile key={service.title} tile={service} />
+                        );
                     })}
                 </div>
             </section>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
@@ -14,11 +13,13 @@ import About from "./Components/Pages/AboutPage/About";
 import Contact from "./Components/Pages/ContactPage/Contact";
 import HomePage from "./Components/Pages/HomePage/Home";
 import Services from "./Components/Pages/ServicePage/Services";
+import ReturnToTop from "./Components/ReturnToTop/ReturnToTop";
 
 function App() {
     return (
         <div className="App">
             <Header />
+            <ReturnToTop />
             <Routes>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
