@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hair-Salon/static/css/main.e81be7ad.css",
-    "main.js": "/Hair-Salon/static/js/main.a5db58f7.js",
+    "main.css": "/Hair-Salon/static/css/main.4edd5680.css",
+    "main.js": "/Hair-Salon/static/js/main.c9b35210.js",
     "static/js/787.c1112931.chunk.js": "/Hair-Salon/static/js/787.c1112931.chunk.js",
     "static/media/woman-washing-head-hairsalon.webp": "/Hair-Salon/static/media/woman-washing-head-hairsalon.6e14e39778dcb2975e55.webp",
     "static/media/stylish-man-sitting-barbershop.webp": "/Hair-Salon/static/media/stylish-man-sitting-barbershop.bc4c8dce247647b80f3d.webp",
@@ -17,12 +17,12 @@
     "static/media/logo.png": "/Hair-Salon/static/media/logo.37c7dae50d7062dc16d2.png",
     "static/media/claire-about.webp": "/Hair-Salon/static/media/claire-about.cb8289edcc0426c0e7e1.webp",
     "index.html": "/Hair-Salon/index.html",
-    "main.e81be7ad.css.map": "/Hair-Salon/static/css/main.e81be7ad.css.map",
-    "main.a5db58f7.js.map": "/Hair-Salon/static/js/main.a5db58f7.js.map",
+    "main.4edd5680.css.map": "/Hair-Salon/static/css/main.4edd5680.css.map",
+    "main.c9b35210.js.map": "/Hair-Salon/static/js/main.c9b35210.js.map",
     "787.c1112931.chunk.js.map": "/Hair-Salon/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e81be7ad.css",
-    "static/js/main.a5db58f7.js"
+    "static/css/main.4edd5680.css",
+    "static/js/main.c9b35210.js"
   ]
 }
