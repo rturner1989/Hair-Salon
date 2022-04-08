@@ -99,3 +99,40 @@
     transition: all 0.3s ease;
     font-family: "Archivo", sans-serif;
 }
+.hamburger-menu {
+    font-size: 2rem;
+    color: white;
+    background: unset;
+    border: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    transition: 0.1s ease-in;
+}
+.hamburger-menu:hover {
+    gap: 0.8rem;
+}
+.line1,
+.line2,
+.line3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+}
+@media screen and (max-width: 950px) {
+    #header {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        border-bottom: 5px rgb(216, 200, 121) solid;
+    }
+    #header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-logo-contact {
+        font-size: min(2vw, 1.6rem);
+    }
+}

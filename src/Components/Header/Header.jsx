@@ -12,6 +12,8 @@ const Header = ({ toggleHamburger }) => {
                 <div className="header-logo-contact">
                     <p>07801 899 240</p>
                     <p>claireholden.ch85@gmail.com</p>
+                </div>
+                <div>
                     <img
                         className="nav-img"
                         src={logo}
@@ -19,9 +21,17 @@ const Header = ({ toggleHamburger }) => {
                         role="presentation"
                     />
                 </div>
-                <button onClick={toggleHamburger}>
-                    <GiHamburgerMenu />
-                </button>
+                <div>
+                    <button
+                        className="hamburger-menu"
+                        onClick={toggleHamburger}
+                    >
+                        {/* <GiHamburgerMenu /> */}
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                    </button>
+                </div>
             </header>
         );
     }
