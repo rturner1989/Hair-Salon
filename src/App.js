@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
@@ -7,6 +8,7 @@ import "./Components/Pages/ServicePage/Services.css";
 import "./Components/Pages/ContactPage/Contact.css";
 import "./Animation.css";
 import "./Components/ReturnToTop/ReturnToTop.css";
+import "./Components/Header/Hamburger/Hamburger.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import About from "./Components/Pages/AboutPage/About";
@@ -14,11 +16,26 @@ import Contact from "./Components/Pages/ContactPage/Contact";
 import HomePage from "./Components/Pages/HomePage/Home";
 import Services from "./Components/Pages/ServicePage/Services";
 import ReturnToTop from "./Components/ReturnToTop/ReturnToTop";
+import Hamburger from "./Components/Header/Hamburger/Hamburger";
 
 function App() {
+    const [toggleHamburger, setToggleHamburger] = useState(false);
+
+    const openCloseHamburger = () => {
+        setToggleHamburger(!toggleHamburger);
+    };
+
+    const closeHamburger = () => {
+        setToggleHamburger(false);
+    };
+
     return (
         <div className="App">
-            <Header />
+            <Header toggleHamburger={openCloseHamburger} />
+            <Hamburger
+                closeHamburger={closeHamburger}
+                isShown={toggleHamburger}
+            />
             <ReturnToTop />
             <Routes>
                 <Route path="/contact" element={<Contact />} />

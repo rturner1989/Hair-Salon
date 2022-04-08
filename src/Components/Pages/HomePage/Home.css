@@ -33,14 +33,13 @@
     gap: 1rem;
 }
 .home-header-blurb h3 {
-    font-size: 3rem;
+    font-size: min(3vw, 4rem);
 }
 .home-header-blurb p {
-    font-size: 1.5rem;
+    font-size: min(2vw, 1.5rem);
 }
 
 /* Tiles */
-
 .tile-section {
     width: 100%;
     display: flex;

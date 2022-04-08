@@ -32,4 +32,5 @@ body {
     align-items: center;
     background-color: var(--backgroundColor);
     overflow: hidden;
+    position: relative;
 }

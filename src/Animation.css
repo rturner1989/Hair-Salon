@@ -4,13 +4,13 @@
         opacity: 0;
     }
     to {
-        opacity: 100;
+        opacity: 100%;
     }
 }
 @keyframes fadeLeft {
     from {
         opacity: 0;
-        transform: translateX(-500px);
+        transform: translateX(500px);
     }
     to {
         opacity: 100;
