@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "./../../Images/logo.png";
 import useWindowDimensions from "./../../Hooks/useWindowDimensions";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ toggleHamburger }) => {
     const [windowDimensions] = useWindowDimensions();
