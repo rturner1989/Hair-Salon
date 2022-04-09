@@ -14,19 +14,20 @@ const Header = ({ toggleHamburger }) => {
                     <p>claireholden.ch85@gmail.com</p>
                 </div>
                 <div>
-                    <img
-                        className="nav-img"
-                        src={logo}
-                        alt="Header Logo"
-                        role="presentation"
-                    />
+                    <Link to="/">
+                        <img
+                            className="nav-img"
+                            src={logo}
+                            alt="Header Logo"
+                            role="presentation"
+                        />
+                    </Link>
                 </div>
                 <div>
                     <button
                         className="hamburger-menu"
                         onClick={toggleHamburger}
                     >
-                        {/* <GiHamburgerMenu /> */}
                         <div className="line1"></div>
                         <div className="line2"></div>
                         <div className="line3"></div>

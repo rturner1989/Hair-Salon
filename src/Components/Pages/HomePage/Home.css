@@ -23,6 +23,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
 }
 .home-header-blurb {
     max-width: 500px;
@@ -175,6 +176,8 @@
 }
 .review-content {
     font-size: 1.3rem;
+    border-left: 5px solid rgb(206, 178, 39);
+    padding-left: 15px;
 }
 .review-icon {
     color: rgb(216, 200, 121);
