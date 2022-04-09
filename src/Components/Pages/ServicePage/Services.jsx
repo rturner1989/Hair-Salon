@@ -70,7 +70,7 @@ const Services = () => {
     return (
         <main className="services-container">
             <section className="service-header">
-                <img style={{ maxWidth: "50%" }} src={serviceHero} alt="" />
+                <img className="service-header-img" src={serviceHero} alt="" />
                 <div className="service-header-blurb">
                     <p className="blurb-line1">
                         Cut or Colour, Long or Short, Thick or Thin.

@@ -133,6 +133,6 @@
         justify-content: center;
     }
     .header-logo-contact {
-        font-size: min(2vw, 1.6rem);
+        font-size: min(2.5vw, 1.6rem);
     }
 }

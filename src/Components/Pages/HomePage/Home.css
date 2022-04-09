@@ -38,16 +38,20 @@
 .home-header-blurb p {
     font-size: min(2vw, 1.5rem);
 }
-
+@media screen and (max-width: 1175px) {
+    .home-header-blurb-container {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 /* Tiles */
 .tile-section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
 }
 .tile-container {
-    background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     max-width: 1400px;
@@ -67,6 +71,7 @@
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    background-color: white;
 }
 .tile-text h4 {
     font-size: 1.3rem;
@@ -99,7 +104,31 @@
     display: flex;
     height: 100%;
 }
-
+@media screen and (max-width: 985px) {
+    .tile-container {
+        grid-template-areas: "tile1" "tile2" "tile3" "tile4";
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
+    .tile {
+        max-width: 800px;
+    }
+    .tile1 {
+        grid-area: tile1;
+    }
+    .tile2 {
+        grid-area: tile3;
+    }
+    .tile3 {
+        grid-area: tile2;
+    }
+    .tile4 {
+        grid-area: tile4;
+    }
+    .options-container {
+        justify-content: space-around;
+    }
+}
 @keyframes heightUp {
     from {
         height: 0;
@@ -122,8 +151,10 @@
 }
 .reviews-container {
     display: flex;
-    max-width: 1400px;
-    gap: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 .review-heading {
     border-top: 1px solid black;
@@ -140,10 +171,10 @@
     flex-direction: column;
     background-color: white;
     padding: 2rem;
+    max-width: 450px;
 }
 .review-content {
-    font-size: 1.4rem;
-    max-width: 350px;
+    font-size: 1.3rem;
 }
 .review-icon {
     color: rgb(216, 200, 121);
@@ -154,4 +185,15 @@
 }
 .icon-right {
     align-self: flex-end;
+}
+@media screen and (max-width: 985px) {
+    .reviews-container {
+        gap: 1rem;
+    }
+    .review {
+        min-width: 100%;
+    }
+    .review-content {
+        font-size: min(4vw, 1.3rem);
+    }
 }

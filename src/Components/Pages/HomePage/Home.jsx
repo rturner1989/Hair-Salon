@@ -35,7 +35,9 @@ const HomePage = () => {
             <section className="tile-section">
                 <div className="tile-container">
                     {homeTiles.map((tile, index) => {
-                        return <TextTile key={index} tile={tile} />;
+                        return (
+                            <TextTile key={index} tile={tile} index={index} />
+                        );
                     })}
                 </div>
             </section>
@@ -45,7 +47,9 @@ const HomePage = () => {
                 </h3>
                 <div className="reviews-container">
                     {reviewQuote.map((review, index) => {
-                        return <Quote key={index} quote={review} />;
+                        return (
+                            <Quote key={index} quote={review} index={index} />
+                        );
                     })}
                 </div>
             </section>
