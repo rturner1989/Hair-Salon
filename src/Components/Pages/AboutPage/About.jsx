@@ -43,9 +43,6 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="overlay"></div>
-                    <div className="overlay1"></div>
-                    <div className="overlay2"></div>
                 </section>
                 <section className="main-content-section">
                     <div>
