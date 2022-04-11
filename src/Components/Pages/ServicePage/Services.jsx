@@ -97,6 +97,7 @@ const Services = () => {
                             <ServiceTile key={service.title} tile={service} />
                         );
                     })}
+                    <div className="service-overlay"></div>
                 </div>
             </section>
             <section>

@@ -81,6 +81,7 @@
 .tile {
     display: flex;
     position: relative;
+    z-index: 200;
 }
 .reverse {
     display: flex;
