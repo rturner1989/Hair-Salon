@@ -40,6 +40,7 @@ const HomePage = () => {
                         );
                     })}
                 </div>
+                <div className="home-overlay"></div>
             </section>
             <section className="review-section">
                 <h3 className="review-heading">
