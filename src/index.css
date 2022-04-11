@@ -8,6 +8,10 @@
     --backgroundColor: rgb(231, 225, 194);
     --strongGold: rgb(216, 200, 121);
 }
+::selection {
+    color: black;
+    background-color: rgb(206, 178, 39);
+}
 html,
 body {
     width: 100vw;

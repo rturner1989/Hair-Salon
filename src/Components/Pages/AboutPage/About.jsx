@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aboutHero from "./../../../Images/about-header.webp";
 import portraitImg from "./../../../Images/claire-about.webp";
 import storeFront from "./../../../Images/shopFront.jpg";
-import insideSalon from "./../../../Images/insideSalon.jpg";
 import workingImg from "./../../../Images/workingImage.jpg";
 
 const About = () => {
@@ -43,6 +43,9 @@ const About = () => {
                             </p>
                         </div>
                     </div>
+                    <div className="overlay"></div>
+                    <div className="overlay1"></div>
+                    <div className="overlay2"></div>
                 </section>
                 <section className="main-content-section">
                     <div>
@@ -55,7 +58,7 @@ const About = () => {
                     </div>
                     <div className="main-content-container">
                         <div className="sub-heading">
-                            <h2>Temp Heading</h2>
+                            <h2>In the beginning</h2>
                         </div>
                         <div className="personal-quote personal-quote1">
                             <p>
@@ -84,7 +87,7 @@ const About = () => {
                 <section className="expanded-about-me-section">
                     <div className="main-content-container">
                         <div className="sub-heading">
-                            <h2>Temp Heading</h2>
+                            <h2>Where i am now</h2>
                         </div>
                         <div className="personal-quote2">
                             <p>
@@ -124,36 +127,58 @@ const About = () => {
                         />
                     </div>
                 </section>
-                {/* <section className="break-section">
-                    <p>BLAH</p>
-                    <p>BLAH</p>
-                    <p>BLAH</p>
-                </section> */}
-                {/* <div>
-                    <img
-                        className="insideSalon-img"
-                        style={{ maxWidth: 400 }}
-                        src={insideSalon}
-                        alt=""
-                    />
-                </div>
-                <div>
-                    <img
-                        className="outsideSalon-img"
-                        style={{ maxWidth: 300 }}
-                        src={storeFront}
-                        alt=""
-                    />
-                </div>
-
-                
-                <div className="personal-quote3">
-                    <p>
-                        I enjoy giving helpful styling tips and teaching
-                        techniques allowing my clients to style there hair for
-                        days to come.
-                    </p>
-                </div> */}
+                <section className="break-section">
+                    <div className="personal-quote personal-quote3">
+                        <p>
+                            <i>
+                                I enjoy giving helpful styling tips and teaching
+                                techniques allowing my clients to style there
+                                hair for days to come.
+                            </i>
+                        </p>
+                    </div>
+                </section>
+                <section className="current-work-section">
+                    <div>
+                        <img
+                            className="outsideSalon-img"
+                            style={{ maxWidth: 500 }}
+                            src={storeFront}
+                            alt=""
+                        />
+                    </div>
+                    <div className="main-content-container">
+                        <div className="sub-heading">
+                            <h2>LV Hair</h2>
+                        </div>
+                        <div className="personal-quote personal-quote4">
+                            <p>
+                                <i>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Quas ipsa minima
+                                    consequatur consectetur nam placeat.
+                                </i>
+                            </p>
+                        </div>
+                        <div className="indepth-info3">
+                            <p>
+                                After gaining my qualifications in Foundation
+                                and Advanced hairdressing, I quickly worked my
+                                way up, working from a Junior to Senior stylist.
+                            </p>
+                            <p>
+                                My journey did not stop there, I was always
+                                chasing my next big opportunity, and this led to
+                                me becoming Salon Manager, overseeing a team of
+                                seven.
+                            </p>
+                            <p>I loved my job, and still do!</p>
+                        </div>
+                    </div>
+                </section>
+                <Link className="about-booking" to="/contact">
+                    <button className="bookingBtn">Enquire Now</button>
+                </Link>
             </div>
         </main>
     );
