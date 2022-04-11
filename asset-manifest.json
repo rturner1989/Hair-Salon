@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hair-Salon/static/css/main.dfd03e2e.css",
-    "main.js": "/Hair-Salon/static/js/main.43e0d958.js",
+    "main.css": "/Hair-Salon/static/css/main.db6ccb9a.css",
+    "main.js": "/Hair-Salon/static/js/main.eef61c06.js",
     "static/js/787.c1112931.chunk.js": "/Hair-Salon/static/js/787.c1112931.chunk.js",
     "static/media/woman-washing-head-hairsalon.webp": "/Hair-Salon/static/media/woman-washing-head-hairsalon.6e14e39778dcb2975e55.webp",
     "static/media/stylish-man-sitting-barbershop.webp": "/Hair-Salon/static/media/stylish-man-sitting-barbershop.bc4c8dce247647b80f3d.webp",
@@ -17,15 +17,14 @@
     "static/media/logo.png": "/Hair-Salon/static/media/logo.37c7dae50d7062dc16d2.png",
     "static/media/workingImage.jpg": "/Hair-Salon/static/media/workingImage.b983740b14324eea37a1.jpg",
     "static/media/shopFront.jpg": "/Hair-Salon/static/media/shopFront.bb3bc93f0d0ca7f1a1e1.jpg",
-    "static/media/insideSalon.jpg": "/Hair-Salon/static/media/insideSalon.ef7dfc6416d9652c4643.jpg",
     "static/media/claire-about.webp": "/Hair-Salon/static/media/claire-about.cb8289edcc0426c0e7e1.webp",
     "index.html": "/Hair-Salon/index.html",
-    "main.dfd03e2e.css.map": "/Hair-Salon/static/css/main.dfd03e2e.css.map",
-    "main.43e0d958.js.map": "/Hair-Salon/static/js/main.43e0d958.js.map",
+    "main.db6ccb9a.css.map": "/Hair-Salon/static/css/main.db6ccb9a.css.map",
+    "main.eef61c06.js.map": "/Hair-Salon/static/js/main.eef61c06.js.map",
     "787.c1112931.chunk.js.map": "/Hair-Salon/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfd03e2e.css",
-    "static/js/main.43e0d958.js"
+    "static/css/main.db6ccb9a.css",
+    "static/js/main.eef61c06.js"
   ]
 }
