@@ -147,7 +147,6 @@
 .contact-entry input {
     padding: 1rem;
     font-size: 1.2rem;
-    border-radius: 5px;
     border: unset;
 }
 .contact-entry input:focus,
@@ -160,10 +159,21 @@
     resize: none;
     padding: 1rem;
     font-size: 1.2rem;
-    border-radius: 5px;
     border: unset;
 }
 .submit-btn {
     max-width: 150px;
     padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: unset;
+    border: black solid 2px;
+    background-color: rgb(216, 200, 121);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.submit-btn:hover {
+    color: rgb(216, 200, 121);
+    background-color: black;
 }
