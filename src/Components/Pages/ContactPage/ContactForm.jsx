@@ -49,6 +49,13 @@ export const ContactForm = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const telValidation = (e) => {
+        if (!/[0-9]/.test(e.key)) {
+            e.preventDefault();
+        }
+        return;
+    };
+
     return (
         <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
             {isSubmit && <h3 className="form-submit-msg">Form Submitted</h3>}
@@ -68,9 +75,12 @@ export const ContactForm = () => {
                         name="phone"
                         value={formData.phone}
                         type="tel"
+                        inputMode="tel"
                         placeholder="Telephone"
+                        maxLength={11}
                         required
                         onChange={onChange}
+                        onKeyPress={telValidation}
                     />
                 </label>
                 <label className="contact-email contact-entry" htmlFor="">
