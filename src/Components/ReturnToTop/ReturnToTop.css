@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 200;
+    z-index: 250;
     animation: fadeIn 0.3s;
     transition: opacity 0.4s;
     opacity: 0.5;

@@ -173,10 +173,10 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <Link className="about-booking" to="/contact">
-                    <button className="bookingBtn">Enquire Now</button>
-                </Link>
             </div>
+            <Link className="about-booking" to="/contact">
+                <button className="bookingBtn">Enquire Now</button>
+            </Link>
         </main>
     );
 };

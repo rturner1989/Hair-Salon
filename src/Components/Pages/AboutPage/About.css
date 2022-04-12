@@ -50,10 +50,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem;
     max-width: 1400px;
     font-size: 1.2rem;
-    /* gap: 4rem; */
+    gap: 1em;
+    background-color: white;
 }
 .section-img {
     object-fit: cover;
@@ -204,5 +205,5 @@
 }
 .about-booking {
     align-self: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
