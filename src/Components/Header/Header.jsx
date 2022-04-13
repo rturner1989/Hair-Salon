@@ -10,7 +10,6 @@ const Header = ({ toggleHamburger }) => {
             <header id="header">
                 <div className="header-logo-contact">
                     <p>07801 899 240</p>
-                    <p>claireholden.ch85@gmail.com</p>
                 </div>
                 <div>
                     <Link to="/">
@@ -46,7 +45,6 @@ const Header = ({ toggleHamburger }) => {
                     alt="Header Logo"
                     role="presentation"
                 />
-                <p>claireholden.ch85@gmail.com</p>
             </div>
             <nav className="nav-container">
                 <ul className="nav-list">
