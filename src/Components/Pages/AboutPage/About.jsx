@@ -159,17 +159,20 @@ const About = () => {
                         </div>
                         <div className="indepth-info3">
                             <p>
-                                After gaining my qualifications in Foundation
-                                and Advanced hairdressing, I quickly worked my
-                                way up, working from a Junior to Senior stylist.
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quas ipsa minima consequatur
+                                consectetur nam placeat.
                             </p>
                             <p>
-                                My journey did not stop there, I was always
-                                chasing my next big opportunity, and this led to
-                                me becoming Salon Manager, overseeing a team of
-                                seven.
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quas ipsa minima consequatur
+                                consectetur nam placeat.
                             </p>
-                            <p>I loved my job, and still do!</p>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quas ipsa minima consequatur
+                                consectetur nam placeat.
+                            </p>
                         </div>
                     </div>
                 </section>
