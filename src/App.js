@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
@@ -20,6 +20,7 @@ import Hamburger from "./Components/Header/Hamburger/Hamburger";
 
 function App() {
     const [toggleHamburger, setToggleHamburger] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState();
 
     const openCloseHamburger = () => {
         setToggleHamburger(!toggleHamburger);
@@ -29,6 +30,15 @@ function App() {
         setToggleHamburger(false);
     };
 
+    const handleVisibleButton = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleVisibleButton);
+    }, []);
+
     return (
         <div className="App">
             <Header toggleHamburger={openCloseHamburger} />
@@ -36,7 +46,7 @@ function App() {
                 closeHamburger={closeHamburger}
                 isShown={toggleHamburger}
             />
-            <ReturnToTop />
+            <ReturnToTop position={scrollPosition} />
             <Routes>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />

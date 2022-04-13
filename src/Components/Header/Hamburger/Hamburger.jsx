@@ -12,6 +12,7 @@ const Hamburger = ({ isShown, closeHamburger }) => {
             }
         >
             <button className="close-btn" onClick={closeHamburger}>
+                <span className="visually-hidden"></span>
                 <AiOutlineClose />
             </button>
             <ul className="nav-list hamburger-nav-list">
