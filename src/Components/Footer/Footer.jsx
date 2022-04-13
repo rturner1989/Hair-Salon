@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { AiFillPhone } from "react-icons/ai";
 import logo from "./../../Images/logo.png";
 
 const Footer = () => {
@@ -19,9 +20,12 @@ const Footer = () => {
                     <p>3 Bridge Street </p>
                     <p>Hereford, HR4 0DF</p>
                 </div>
-                <p className="footer-number">Contact: 07801 899 240</p>
-                <p className="footer-email">
-                    Email: claireholden.ch85@gmail.com
+                <p className="footer-number">
+                    {" "}
+                    <span>
+                        <AiFillPhone className="icon-svg" />
+                    </span>
+                    07801 899 240
                 </p>
             </div>
             <div className="social-links-container">
@@ -31,6 +35,7 @@ const Footer = () => {
                         <a
                             className="social-link"
                             href="https://www.facebook.com/claireholdenhairstylist"
+                            target={"_blank"}
                         >
                             <span className="visually-hidden">
                                 Facebook Link
@@ -42,6 +47,7 @@ const Footer = () => {
                         <a
                             className="social-link"
                             href="https://www.instagram.com/claire_holden_hairstylist/?hl=en"
+                            target={"_blank"}
                         >
                             <span className="visually-hidden">
                                 Instagram Link
