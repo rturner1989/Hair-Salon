@@ -23,7 +23,7 @@
 }
 .service-header-blurb {
     z-index: 100;
-    font-size: 1.6rem;
+    font-size: min(3vw, 1.6rem);
     display: flex;
     flex-direction: column;
     justify-content: center;

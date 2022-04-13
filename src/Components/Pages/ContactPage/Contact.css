@@ -149,6 +149,7 @@
     min-height: 450px;
     max-width: 1050px;
     gap: 0 0.6rem;
+    min-width: 700px;
 }
 .contact-name {
     grid-area: name;

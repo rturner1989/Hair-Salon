@@ -45,10 +45,9 @@ const About = () => {
                     </div>
                 </section>
                 <section className="main-content-section">
-                    <div>
+                    <div className="img-container">
                         <img
                             className="section-img portrait-img"
-                            style={{ maxWidth: 300 }}
                             src={portraitImg}
                             alt=""
                         />
@@ -115,10 +114,9 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div>
+                    <div className="img-container">
                         <img
                             className="section-img working-img"
-                            style={{ maxWidth: 300 }}
                             src={workingImg}
                             alt=""
                         />
@@ -136,10 +134,9 @@ const About = () => {
                     </div>
                 </section>
                 <section className="current-work-section">
-                    <div>
+                    <div className="img-container-large">
                         <img
                             className="outsideSalon-img"
-                            style={{ maxWidth: 500 }}
                             src={storeFront}
                             alt=""
                         />

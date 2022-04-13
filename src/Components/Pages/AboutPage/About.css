@@ -57,7 +57,14 @@
     background-color: white;
 }
 .section-img {
+    width: 100%;
     object-fit: cover;
+}
+.img-container {
+    max-width: 300px;
+}
+.img-container-large {
+    max-width: 500px;
 }
 /* Section 1 */
 .introduction-section {
@@ -85,7 +92,7 @@
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: min(3vw, 1.6rem);
 }
 .introduction-statement {
     display: flex;
@@ -96,11 +103,15 @@
     width: 100%;
     z-index: 100;
 }
+.introduction-statement p {
+    font-size: min(2.2vw, 1.2rem);
+}
 /* Section 2 */
 .main-content-section {
     display: flex;
     width: 100%;
     flex-direction: row;
+    align-items: center;
     background: linear-gradient(
         70deg,
         rgb(206, 178, 39) 16%,
@@ -113,6 +124,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    min-width: 420px;
 }
 .sub-heading h2 {
     border-top: 1px solid black;
@@ -122,18 +134,22 @@
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: min(2.8vw, 1.4rem);
 }
 .personal-quote {
     padding: 0 1rem;
     border-left: 5px solid rgb(206, 178, 39);
     line-height: 3rem;
+    font-size: min(2vw, 1.2rem);
 }
 .indepth-info1 {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
+}
+.indepth-info1 p {
+    font-size: min(2.2vw, 1.2rem);
 }
 /* Section 3 */
 .expanded-about-me-section {
@@ -147,11 +163,13 @@
     );
     gap: 1rem;
     padding: 1rem;
+    align-items: center;
 }
 .personal-quote2 {
     padding: 0 1rem;
     border-right: 5px solid rgb(206, 178, 39);
     line-height: 3rem;
+    font-size: min(2vw, 1.2rem);
     text-align: right;
 }
 .indepth-info2 {
@@ -160,6 +178,9 @@
     text-align: right;
     width: 100%;
     gap: 1rem;
+}
+.indepth-info2 p {
+    font-size: min(2.2vw, 1.2rem);
 }
 /* Section 4 */
 .break-section {
@@ -195,6 +216,7 @@
         rgb(255, 255, 255) 20px
     );
     padding: 1rem;
+    align-items: center;
 }
 .indepth-info3 {
     display: flex;
@@ -203,7 +225,13 @@
     width: 100%;
     gap: 1rem;
 }
+.indepth-info3 p {
+    font-size: min(2.2vw, 1.2rem);
+}
 .about-booking {
     align-self: center;
     margin: 2rem 0;
+}
+.outsideSalon-img {
+    width: 100%;
 }
