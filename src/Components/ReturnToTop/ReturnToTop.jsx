@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
-const ReturnToTop = ({ position }) => {
-    const [showTopBtn, setShowTopBtn] = useState(false);
+const ReturnToTop = ({ offset }) => {
+    const [scrollPosition, setScrollPosition] = useState();
+
+    const handleVisibleButton = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    };
 
     const goToTop = () => {
         window.scrollTo({
@@ -11,9 +16,18 @@ const ReturnToTop = ({ position }) => {
         });
     };
 
+    useEffect(() => {
+        window.addEventListener("scroll", handleVisibleButton);
+        return () => {
+            window.removeEventListener("scroll");
+        };
+    }, []);
+
     return (
         <div
-            className={position > 100 ? "top-of-page" : "top-of-page hidden"}
+            className={
+                scrollPosition > offset ? "top-of-page" : "top-of-page hidden"
+            }
             onClick={goToTop}
         >
             <span className="visually-hidden">Return to top of page</span>

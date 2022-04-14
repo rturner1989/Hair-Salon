@@ -20,7 +20,8 @@ import Hamburger from "./Components/Header/Hamburger/Hamburger";
 
 function App() {
     const [toggleHamburger, setToggleHamburger] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState();
+
+    const offsetValue = 100;
 
     const openCloseHamburger = () => {
         setToggleHamburger(!toggleHamburger);
@@ -30,15 +31,6 @@ function App() {
         setToggleHamburger(false);
     };
 
-    const handleVisibleButton = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleVisibleButton);
-    }, []);
-
     return (
         <div className="App">
             <Header toggleHamburger={openCloseHamburger} />
@@ -46,7 +38,7 @@ function App() {
                 closeHamburger={closeHamburger}
                 isShown={toggleHamburger}
             />
-            <ReturnToTop position={scrollPosition} />
+            <ReturnToTop offset={offsetValue} />
             <Routes>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
