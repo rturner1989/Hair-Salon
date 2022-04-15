@@ -84,7 +84,7 @@ export const homeTiles = [
     },
     {
         title: "The Best Tools for the Job",
-        blurb: "Employing the latest techniques, no job is too big. Only the best equipment is used to ensure a quality service throughout.",
+        blurb: "Employing the latest techniques and only the best equipment, a quality service is assured throughout.",
         img: serviceImg,
         innerText: "Hello World",
         imgAlt: "A combination of tools used when cutting hair.",
