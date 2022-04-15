@@ -32,3 +32,9 @@
 .hidden {
     display: none;
 }
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .top-of-page {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}

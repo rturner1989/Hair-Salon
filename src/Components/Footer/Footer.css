@@ -66,3 +66,22 @@
     display: block;
     font-size: 1.3rem;
 }
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .footer-img-container {
+        display: none;
+    }
+    #footer {
+        display: flex;
+        height: 145px;
+        padding: 0.5rem;
+    }
+    .footer-contact {
+        width: 100%;
+    }
+    .footer-number {
+        font-size: 1.2rem;
+    }
+    .social-links-container {
+        height: 100%;
+    }
+}

@@ -13,7 +13,14 @@ const HomeHeader = () => {
                         Holden and I pride myself in giving a personalised and
                         quality service that will leave you feeling exquisite.
                     </p>
-                    <p style={{ fontSize: "0.9rem" }}>
+                    <p
+                        style={{
+                            fontSize: "0.9rem",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.2rem",
+                            fontWeight: "800",
+                        }}
+                    >
                         <i>
                             HBA Hair & Beauty Finalist
                             <br />

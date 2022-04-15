@@ -36,6 +36,9 @@
 }
 .home-header-blurb h3 {
     font-size: min(3vw, 4rem);
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
 }
 .home-header-blurb p {
     font-size: min(2vw, 1.5rem);
@@ -101,6 +104,9 @@
 .tile-text h4 {
     font-size: 1.3rem;
     text-align: center;
+    letter-spacing: 0.2rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
 }
 .tile-text p {
     width: 90%;
@@ -304,5 +310,20 @@
     }
     .tile-text p {
         font-size: 0.9rem;
+    }
+    .review-section {
+        min-height: unset;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        gap: 1rem;
+    }
+    .review-heading {
+        font-size: 1.3rem;
+    }
+    .review {
+        max-width: unset;
+        padding: 1rem;
+    }
+    .review-content {
+        font-size: 1.1rem;
     }
 }
