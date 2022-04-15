@@ -100,6 +100,7 @@
 }
 .tile-text h4 {
     font-size: 1.3rem;
+    text-align: center;
 }
 .tile-text p {
     width: 90%;
@@ -130,25 +131,58 @@
     height: 100%;
 }
 @media screen and (max-width: 985px) {
-    .tile-container {
+    .tile-section {
+        display: none;
+    }
+    .tile-section-mobile {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .tile-container-mobile {
+        display: grid;
         grid-template-areas: "tile1" "tile2" "tile3" "tile4";
         grid-template-columns: 100%;
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .tile {
-        max-width: 800px;
+        padding: 1rem;
     }
     .tile1 {
         grid-area: tile1;
+        background: linear-gradient(
+            135deg,
+            rgb(206, 178, 39) 35%,
+            rgb(255, 255, 255) 20px
+        );
+        max-width: 800px;
     }
     .tile2 {
         grid-area: tile3;
+        background: linear-gradient(
+            135deg,
+            rgb(206, 178, 39) 40%,
+            rgb(255, 255, 255) 20px
+        );
+        max-width: 800px;
     }
     .tile3 {
         grid-area: tile2;
+        background: linear-gradient(
+            -135deg,
+            rgb(206, 178, 39) 40%,
+            rgb(255, 255, 255) 20px
+        );
+        max-width: 800px;
     }
     .tile4 {
         grid-area: tile4;
+        background: linear-gradient(
+            -135deg,
+            rgb(206, 178, 39) 40%,
+            rgb(255, 255, 255) 20px
+        );
+        max-width: 800px;
     }
     .options-container {
         justify-content: space-around;
@@ -222,5 +256,53 @@
     }
     .review-content {
         font-size: min(4vw, 1.3rem);
+    }
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .homePage {
+        gap: 0;
+    }
+    .home-header {
+        height: 300px;
+    }
+    .home-header-blurb-container {
+        height: 100%;
+        z-index: 100;
+    }
+    .home-header-blurb {
+        padding: 1rem;
+        max-width: unset;
+        text-align: center;
+    }
+    .home-header-blurb h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .home-header-blurb p {
+        font-size: 1.1rem;
+    }
+    .home-header-blurb a {
+        display: none;
+    }
+    .home-header-img {
+        overflow: hidden;
+        min-width: 714px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    .tile {
+        padding: 0.6rem;
+    }
+    .tile-text {
+        gap: 0.5rem;
+    }
+    .tile-text h4 {
+        font-size: 1.2rem;
+    }
+    .tile-text p {
+        font-size: 0.9rem;
     }
 }

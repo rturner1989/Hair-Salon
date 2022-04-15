@@ -136,3 +136,13 @@
         font-size: min(2.5vw, 1.6rem);
     }
 }
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .header-logo-contact {
+        color: transparent;
+        height: 0;
+        width: 0;
+    }
+    .nav-img {
+        max-width: 100px;
+    }
+}
