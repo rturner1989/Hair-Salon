@@ -1,9 +1,7 @@
 import { useState } from "react";
-import useWindowDimensions from "../../../Hooks/useWindowDimensions";
 
-const TextTile = ({ tile, index }) => {
+const TextTile = ({ tile }) => {
     const { title, blurb, img, imgAlt, innerText, reverse } = tile;
-    const [windowDimensions] = useWindowDimensions();
     const [isTileHover, setIsTileHover] = useState(false);
 
     const toggleHover = () => {
@@ -11,13 +9,7 @@ const TextTile = ({ tile, index }) => {
     };
 
     return (
-        <div
-            className={
-                windowDimensions.width < 985
-                    ? `tile ${reverse} tile${index + 1}`
-                    : `tile ${reverse}`
-            }
-        >
+        <div className={`tile ${reverse}`}>
             <div className="tile-text">
                 <h4>{title}</h4>
                 <p>{blurb}</p>
