@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const Flip = () => {
+const Flip = ({ delay }) => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleVisibleButton = () => {
@@ -16,7 +16,7 @@ const Flip = () => {
     return (
         <div
             className={
-                scrollPosition < 400 ? "flip-card flip-active" : "flip-card"
+                scrollPosition < delay ? "flip-card flip-active" : "flip-card"
             }
         >
             <div className="flip-card-inner">
