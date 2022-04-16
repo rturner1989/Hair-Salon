@@ -1,29 +1,22 @@
-import { useEffect, useRef } from "react";
+import useIntersectionObserver from "../../Hooks/useIntersectionObserver";
 import TextTileMobile from "../Pages/HomePage/TextTileMobile";
 
 const Flip = ({ tile, index }) => {
-    const flipRef = useRef();
-
-    const handleVisibleButton = () => {
-        const position = window.pageYOffset;
-        if (position > 100) {
-            flipRef.current.classList.add("flip-active");
-        } else {
-            flipRef.current.classList.remove("flip-active");
-        }
+    const options = {
+        root: null,
+        rootMargin: "1000% 0% -50% 0%",
+        threshold: 0,
     };
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleVisibleButton);
-        return () => {
-            window.removeEventListener("scroll", handleVisibleButton);
-        };
-    }, []);
-
-    console.log("rerender");
+    const [flipRef, isVisible] = useIntersectionObserver(null, options);
 
     return (
-        <div className={`flip-card tile${index + 1}`} ref={flipRef}>
+        <div
+            className={`flip-card tile${index + 1} ${
+                isVisible && "flip-active"
+            }`}
+            ref={flipRef}
+        >
             <div className="flip-card-inner">
                 <div className="flip-card-front">Front</div>
                 <div className={`flip-card-back card-back${index + 1}`}>
