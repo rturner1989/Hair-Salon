@@ -39,7 +39,7 @@ function App() {
                 closeHamburger={closeHamburger}
                 isShown={toggleHamburger}
             />
-            <ReturnToTop offset={offsetValue} />
+            <ReturnToTop />
             <Routes>
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />

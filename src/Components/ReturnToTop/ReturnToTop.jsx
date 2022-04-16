@@ -1,13 +1,9 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import useIntersectionObserver from "../../Hooks/useIntersectionObserver";
 
-const ReturnToTop = ({ offset }) => {
-    const [scrollPosition, setScrollPosition] = useState();
-
-    const handleVisibleButton = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
+const ReturnToTop = () => {
+    const [intersectionRef, isVisible] = useIntersectionObserver();
 
     const goToTop = () => {
         window.scrollTo({
@@ -16,22 +12,20 @@ const ReturnToTop = ({ offset }) => {
         });
     };
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleVisibleButton);
-        return () => {
-            window.removeEventListener("scroll");
-        };
-    }, []);
-
     return (
         <div
-            className={
-                scrollPosition > offset ? "top-of-page" : "top-of-page hidden"
-            }
+            className="top-of-page-container"
+            ref={intersectionRef}
             onClick={goToTop}
         >
-            <span className="visually-hidden">Return to top of page</span>
-            <AiOutlineArrowUp className="top-of-page-svg" />
+            <button
+                className={`${
+                    isVisible ? "top-of-page hidden" : "top-of-page"
+                }`}
+            >
+                <span className="visually-hidden">Return to top of page</span>
+                <AiOutlineArrowUp className="top-of-page-svg" />
+            </button>
         </div>
     );
 };
