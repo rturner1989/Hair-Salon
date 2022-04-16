@@ -1,8 +1,8 @@
 import React from "react";
 import useWindowDimensions from "../../../Hooks/useWindowDimensions";
 import TextTile from "./TextTile";
-import TextTileMobile from "./TextTileMobile";
 import { homeTiles } from "../../../Data/Data";
+import Flip from "../../Flip/Flip";
 
 const TileSection = () => {
     const [windowDimensions] = useWindowDimensions();
@@ -12,13 +12,7 @@ const TileSection = () => {
             <section className="tile-section-mobile">
                 <div className="tile-container-mobile">
                     {homeTiles.map((tile, index) => {
-                        return (
-                            <TextTileMobile
-                                key={index}
-                                tile={tile}
-                                index={index}
-                            />
-                        );
+                        return <Flip key={index} tile={tile} index={index} />;
                     })}
                 </div>
             </section>

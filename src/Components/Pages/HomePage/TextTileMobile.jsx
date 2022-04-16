@@ -1,8 +1,8 @@
-const TextTileMobile = ({ tile, index }) => {
+const TextTileMobile = ({ tile }) => {
     const { title, blurb, img, imgAlt, innerText, reverse } = tile;
 
     return (
-        <div className={`tile${index + 1}`}>
+        <div>
             <div className={`tile ${reverse} `}>
                 <div className="tile-text">
                     <h4>{title}</h4>

@@ -7,9 +7,6 @@ const HomePage = () => {
     return (
         <main className="homePage">
             <HomeHeader />
-            <Flip delay={200} />
-            <Flip delay={400} />
-            <Flip delay={600} />
             <TileSection />
             <ReviewSection />
         </main>
