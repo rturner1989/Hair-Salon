@@ -6,6 +6,9 @@ import ladiesServiceImg from "./../Images/female-cutting.webp";
 import colorServiceImg from "./../Images/hairdresser-does-hair-style-woman.webp";
 import gentsServiceImg from "./../Images/stylish-man-sitting-barbershop.webp";
 import bridalServiceImg from "./../Images/wedding-hair.webp";
+import portraitImg from "./../Images/claire-about.webp";
+import workingImg from "./../Images/workingImage.jpg";
+import storeFront from "./../Images/shopFront.jpg";
 
 export const services = [
     {
@@ -101,5 +104,48 @@ export const reviewQuote = [
     },
     {
         review: "Claire is amazing with hair. She created the most amazing colour for me. Honestly would recommend Claire to anyone looking for any kind of cut or colour x",
+    },
+];
+
+export const aboutContent = [
+    {
+        img: portraitImg,
+        imgAlt: "",
+        title: "In the beginning",
+        personalQuote:
+            "I would describe my style of hairdressing as naturally beautiful.",
+        indepthInfo: [
+            "After gaining my qualifications in Foundation and Advanced hairdressing, I quickly worked my way up, working from a Junior to Senior stylist.",
+            "My journey did not stop there, I was always chasing my next big opportunity, and this led to me becoming Salon Manager, overseeing a team of seven.",
+            "I loved my job, and still do!",
+        ],
+    },
+    {
+        img: workingImg,
+        imgAlt: "",
+        title: "Where i am now",
+        personalQuote:
+            "I like to create styles that my clients are able to recreate in their own homes.",
+        indepthInfo: [
+            "In 2015, I left the industry, going away and learning new skills which have helped solidify who I am today.",
+            "But! Salon life was ingrained in who I am, so in 2018 I became a self-employed Hair Stylist.",
+            "So here I am, self-employed at the LV Hair salon and loving it!",
+            "I have many wonderful clients and am always overjoyed with meeting new people and seeing many more happy faces leave the salon.",
+        ],
+    },
+];
+
+export const aboutFuture = [
+    {
+        img: storeFront,
+        imgAlt: "",
+        title: "LV Hair",
+        personalQuote:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
+        indepthInfo: [
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
+        ],
     },
 ];

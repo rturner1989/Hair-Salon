@@ -69,7 +69,7 @@
 .img-container-large {
     max-width: 500px;
 }
-/* Section 1 */
+/* Introduction */
 .introduction-section {
     position: relative;
     align-self: center;
@@ -109,7 +109,7 @@
 .introduction-statement p {
     font-size: min(2.2vw, 1.2rem);
 }
-/* Section 2 */
+/* Sections */
 .main-content-section {
     display: flex;
     width: 100%;
@@ -145,47 +145,17 @@
     line-height: 3rem;
     font-size: min(2vw, 1.2rem);
 }
-.indepth-info1 {
+.indepth-info {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
 }
-.indepth-info1 p {
+.indepth-info p {
     font-size: min(2.2vw, 1.2rem);
 }
-/* Section 3 */
-.expanded-about-me-section {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    background: linear-gradient(
-        70deg,
-        rgb(255, 255, 255) 85%,
-        rgb(206, 178, 39) 20px
-    );
-    gap: 1rem;
-    padding: 1rem;
-    align-items: center;
-}
-.personal-quote2 {
-    padding: 0 1rem;
-    border-right: 5px solid rgb(206, 178, 39);
-    line-height: 3rem;
-    font-size: min(2vw, 1.2rem);
-    text-align: right;
-}
-.indepth-info2 {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 100%;
-    gap: 1rem;
-}
-.indepth-info2 p {
-    font-size: min(2.2vw, 1.2rem);
-}
-/* Section 4 */
+
+/* Break */
 .break-section {
     align-self: center;
     display: flex;
@@ -204,10 +174,13 @@
     width: 100vw;
     min-height: 250px;
 }
-.personal-quote3 {
+.personal-quote-alt {
+    padding: 0 1rem;
+    border-left: 5px solid rgb(206, 178, 39);
+    line-height: 3rem;
     font-size: min(3vw, 1.75rem);
 }
-/* Section 5 */
+/* Future */
 .current-work-section {
     display: flex;
     width: 100%;
