@@ -258,7 +258,7 @@
     padding: 0 1rem;
     border-left: 5px solid rgb(206, 178, 39);
     line-height: 3rem;
-    font-size: min(3vw, 1.75rem);
+    font-size: min(4vw, 1.75rem);
 }
 /* Enquire button */
 .about-booking {
@@ -317,6 +317,12 @@
             opacity: 1;
             transform: translateX(0);
         }
+    }
+    .break-section {
+        padding: 0.5rem;
+    }
+    .personal-quote-alt {
+        font-size: 1.1rem;
     }
 }
 
