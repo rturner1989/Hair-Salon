@@ -12,7 +12,7 @@
     bottom: 3rem;
     right: 3rem;
     border: unset;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@
 }
 .top-of-page-svg {
     font-size: 2rem;
+    color: rgb(206, 178, 39);
 }
 
 .hidden {
