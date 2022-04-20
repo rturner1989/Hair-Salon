@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./Components/Header/Header.css";
 import "./Components/Footer/Footer.css";
@@ -21,8 +21,6 @@ import Hamburger from "./Components/Header/Hamburger/Hamburger";
 
 function App() {
     const [toggleHamburger, setToggleHamburger] = useState(false);
-
-    const offsetValue = 100;
 
     const openCloseHamburger = () => {
         setToggleHamburger(!toggleHamburger);
