@@ -1,9 +1,12 @@
 import React from "react";
 
 const AboutContent = ({ content }) => {
-    const { img, imgAlt, title, personalQuote, indepthInfo } = content;
+    const { img, imgAlt, title, personalQuote, indepthInfo, reverse } = content;
     return (
-        <section className="main-content-section">
+        <section
+            className="main-content-section"
+            id={reverse ? "about-reverse" : ""}
+        >
             <div className="img-container">
                 <img
                     className="section-img portrait-img"

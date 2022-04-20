@@ -119,6 +119,7 @@ export const aboutContent = [
             "My journey did not stop there, I was always chasing my next big opportunity, and this led to me becoming Salon Manager, overseeing a team of seven.",
             "I loved my job, and still do!",
         ],
+        reverse: false,
     },
     {
         img: workingImg,
@@ -132,6 +133,7 @@ export const aboutContent = [
             "So here I am, self-employed at the LV Hair salon and loving it!",
             "I have many wonderful clients and am always overjoyed with meeting new people and seeing many more happy faces leave the salon.",
         ],
+        reverse: true,
     },
 ];
 
@@ -147,5 +149,6 @@ export const aboutFuture = [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa minima consequatur consectetur nam placeat.",
         ],
+        reverse: false,
     },
 ];

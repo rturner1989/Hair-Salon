@@ -123,6 +123,14 @@
     gap: 1rem;
     padding: 1rem;
 }
+#about-reverse {
+    flex-direction: row-reverse;
+    background: linear-gradient(
+        -70deg,
+        rgb(206, 178, 39) 16%,
+        rgb(255, 255, 255) 20px
+    );
+}
 .main-content-container {
     display: flex;
     flex-direction: column;
