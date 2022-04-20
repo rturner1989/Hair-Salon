@@ -12,7 +12,9 @@ const AboutContentContainer = () => {
                 return <AboutContent key={content.title} content={content} />;
             })}
             <Break />
-            <AboutContent content={aboutFuture[0]} />
+            {aboutFuture.map((content) => {
+                return <AboutContent key={content.title} content={content} />;
+            })}
         </div>
     );
 };
