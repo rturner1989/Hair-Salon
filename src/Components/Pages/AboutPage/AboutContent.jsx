@@ -1,16 +1,29 @@
 import React from "react";
+import useIntersectionObserver from "../../../Hooks/useIntersectionObserver";
 import useWindowDimensions from "../../../Hooks/useWindowDimensions";
 
 const AboutContent = ({ content }) => {
     const { img, imgAlt, title, personalQuote, indepthInfo, reverse } = content;
 
-    const [windowDimensions] = useWindowDimensions();
+    const options = {
+        root: null,
+        rootMargin: "1000% 0% -30% 0%",
+        threshold: 0,
+    };
 
-    if (windowDimensions.width <= 430) {
+    const [windowDimensions] = useWindowDimensions();
+    const [sideRef, isVisible] = useIntersectionObserver(null, options);
+
+    if (windowDimensions.width <= 930) {
         return (
             <section
-                className="main-content-section-mobile"
+                className={
+                    isVisible
+                        ? "main-content-section-mobile slide-active"
+                        : "main-content-section-mobile "
+                }
                 id={reverse ? "about-reverse-mobile" : ""}
+                ref={sideRef}
             >
                 <div className="sub-heading-mobile">
                     <h2>{title}</h2>

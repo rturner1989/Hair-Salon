@@ -1,7 +1,6 @@
 import HomeHeader from "./HomeHeader";
 import TileSection from "./TileSection";
 import ReviewSection from "./ReviewSection";
-import Flip from "../../Flip/Flip";
 
 const HomePage = () => {
     return (
