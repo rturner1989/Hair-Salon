@@ -34,6 +34,7 @@
     letter-spacing: 0.3rem;
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 .about-header-content p {
     font-size: min(3vw, 1.4rem);
@@ -59,16 +60,7 @@
     gap: 1em;
     background-color: white;
 }
-.section-img {
-    width: 100%;
-    object-fit: cover;
-}
-.img-container {
-    max-width: 300px;
-}
-.img-container-large {
-    max-width: 500px;
-}
+
 /* Introduction */
 .introduction-section {
     position: relative;
@@ -135,7 +127,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    min-width: 420px;
 }
 .sub-heading h2 {
     border-top: 1px solid black;
@@ -153,6 +144,10 @@
     line-height: 3rem;
     font-size: min(2vw, 1.2rem);
 }
+.personal-quote p {
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
 .indepth-info {
     display: flex;
     flex-direction: column;
@@ -162,7 +157,83 @@
 .indepth-info p {
     font-size: min(2.2vw, 1.2rem);
 }
+.section-img {
+    width: 100%;
+    object-fit: cover;
+}
+.img-container {
+    max-width: 300px;
+    min-width: 200px;
+}
 
+/* Mobile Sections */
+
+.main-content-section-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    padding: 1rem;
+}
+.main-content-container-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sub-heading-mobile h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-family: "Archivo", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.img-quote-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.img-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0.5rem;
+    background: linear-gradient(
+        45deg,
+        rgb(206, 178, 39) 55%,
+        rgb(255, 255, 255) 20px
+    );
+}
+.personal-quote-mobile {
+    padding: 0 1rem;
+    border-left: 5px solid rgb(206, 178, 39);
+    line-height: 3rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.personal-quote-mobile p {
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+.indepth-info-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.indepth-info-mobile p {
+    font-size: 1rem;
+    text-align: center;
+}
+.section-img-mobile {
+    width: 100%;
+    object-fit: cover;
+}
 /* Break */
 .break-section {
     align-self: center;
@@ -188,38 +259,11 @@
     line-height: 3rem;
     font-size: min(3vw, 1.75rem);
 }
-/* Future */
-.current-work-section {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    gap: 1rem;
-    background: linear-gradient(
-        70deg,
-        rgb(206, 178, 39) 25%,
-        rgb(255, 255, 255) 20px
-    );
-    padding: 1rem;
-    align-items: center;
-}
-.indepth-info3 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 100%;
-    gap: 1rem;
-}
-.indepth-info3 p {
-    font-size: min(2.2vw, 1.2rem);
-}
+/* Enquire button */
 .about-booking {
     align-self: center;
     margin: 2rem 0;
 }
-.outsideSalon-img {
-    width: 100%;
-}
-
 @media screen and (max-width: 430px) and (orientation: portrait) {
     .about-header-container {
         height: 300px;
@@ -238,26 +282,18 @@
     .about-header-content p {
         font-size: 1.1rem;
     }
-
     .about-content-container {
         padding: 0.5rem;
+        gap: 0.5rem;
+        background-color: unset;
     }
-    .introduction-section,
-    .main-content-section,
-    .expanded-about-me-section {
-        padding: 0;
-    }
-    .main-heading,
-    .sub-heading {
+    .main-heading {
         width: 100%;
     }
     .main-heading h1 {
         font-size: 1.3rem;
     }
-    .main-content-container {
-        min-width: unset;
+    .introduction-section p {
+        font-size: 1rem;
     }
-    /* .img-container {
-        display: none;
-    } */
 }
