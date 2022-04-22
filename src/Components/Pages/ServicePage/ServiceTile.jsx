@@ -7,6 +7,30 @@ const ServiceTile = ({ tile }) => {
     const { title, img, reverse, options } = tile;
     const [windowDimensions] = useWindowDimensions();
 
+    if (windowDimensions.width <= 985) {
+        return (
+            <div className="tile">
+                <div className="options-container-mobile">
+                    <h2>{title}</h2>
+                    <div>
+                        {options.map((option) => {
+                            return (
+                                <ServiceOption key={makeID()} option={option} />
+                            );
+                        })}
+                    </div>
+                </div>
+                <div className="options-img-container-mobile">
+                    <img
+                        className="service-tile-img-mobile"
+                        src={img}
+                        style={{ maxWidth: "100px" }}
+                    />
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div
             className={
