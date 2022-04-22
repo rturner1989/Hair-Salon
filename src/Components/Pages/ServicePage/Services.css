@@ -157,9 +157,25 @@
     text-transform: uppercase;
 }
 /* Radio mobile category selection */
+.service-options-container-mobile {
+    width: 95%;
+    min-height: 350px;
+    padding: 0.5rem;
+    background: linear-gradient(
+        135deg,
+        rgb(206, 178, 39) 50%,
+        rgb(255, 255, 255) 20px
+    );
+}
+.form-container {
+    min-height: 350px;
+    height: 100%;
+    background-color: white;
+    padding: 0 1rem;
+}
 .options-list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     padding: 1rem 0;
     align-items: center;
@@ -171,6 +187,8 @@
 }
 .service-option {
     letter-spacing: 0.2rem;
+    height: 100%;
+    width: 100%;
 }
 .service-option:hover {
     background-color: grey;
@@ -181,6 +199,7 @@
     height: 100%;
     width: 100%;
     padding: 0.5rem;
+    text-align: center;
 }
 .service-option-input {
     appearance: none;

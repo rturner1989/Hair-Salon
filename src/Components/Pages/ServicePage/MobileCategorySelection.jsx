@@ -66,91 +66,93 @@ const MobileCategorySelection = () => {
     };
 
     return (
-        <div>
-            <form action="#" className="options-list">
-                <div
-                    className={
-                        selectedService === selectionType.LADIES
-                            ? "service-option option-active"
-                            : "service-option"
-                    }
-                >
-                    <input
-                        className="service-option-input"
-                        type="radio"
-                        id="ladies"
-                        name="input"
-                        value={selectionType.LADIES}
-                        onChange={(e) => {
-                            setSelectedService(e.target.value);
-                        }}
-                        checked={selectedService === "ladies"}
-                    />
-                    <label htmlFor="ladies">Ladies</label>
-                </div>
-                <div
-                    className={
-                        selectedService === selectionType.COLOURS
-                            ? "service-option option-active"
-                            : "service-option"
-                    }
-                >
-                    <input
-                        className="service-option-input"
-                        type="radio"
-                        id="colours"
-                        name="input"
-                        value={selectionType.COLOURS}
-                        onChange={(e) => {
-                            setSelectedService(e.target.value);
-                        }}
-                        checked={selectedService === "colours"}
-                    />
-                    <label htmlFor="colours">Colours</label>
-                </div>
-                <div
-                    className={
-                        selectedService === selectionType.GENTS
-                            ? "service-option option-active"
-                            : "service-option"
-                    }
-                >
-                    <input
-                        className="service-option-input"
-                        type="radio"
-                        id="gents"
-                        name="input"
-                        value={selectionType.GENTS}
-                        onChange={(e) => {
-                            setSelectedService(e.target.value);
-                        }}
-                        checked={selectedService === "gents"}
-                    />
-                    <label htmlFor="gents">Gents &#38; Children</label>
-                </div>
-                <div
-                    className={
-                        selectedService === selectionType.HAIRUPDO
-                            ? "service-option option-active"
-                            : "service-option"
-                    }
-                >
-                    <input
-                        className="service-option-input"
-                        type="radio"
-                        id="hair-up-dos"
-                        name="input"
-                        value={selectionType.HAIRUPDO}
-                        onChange={(e) => {
-                            setSelectedService(e.target.value);
-                        }}
-                        checked={selectedService === "hair-up-dos"}
-                    />
-                    <label htmlFor="hair-up-dos">Hair Up Do's</label>
-                </div>
-            </form>
-            {serviceSelection()}
-        </div>
+        <section className="service-options-container-mobile">
+            <div className="form-container">
+                <form action="#" className="options-list">
+                    <div
+                        className={
+                            selectedService === selectionType.LADIES
+                                ? "service-option option-active"
+                                : "service-option"
+                        }
+                    >
+                        <input
+                            className="service-option-input"
+                            type="radio"
+                            id="ladies"
+                            name="input"
+                            value={selectionType.LADIES}
+                            onChange={(e) => {
+                                setSelectedService(e.target.value);
+                            }}
+                            checked={selectedService === "ladies"}
+                        />
+                        <label htmlFor="ladies">Ladies</label>
+                    </div>
+                    <div
+                        className={
+                            selectedService === selectionType.COLOURS
+                                ? "service-option option-active"
+                                : "service-option"
+                        }
+                    >
+                        <input
+                            className="service-option-input"
+                            type="radio"
+                            id="colours"
+                            name="input"
+                            value={selectionType.COLOURS}
+                            onChange={(e) => {
+                                setSelectedService(e.target.value);
+                            }}
+                            checked={selectedService === "colours"}
+                        />
+                        <label htmlFor="colours">Colours</label>
+                    </div>
+                    <div
+                        className={
+                            selectedService === selectionType.GENTS
+                                ? "service-option option-active"
+                                : "service-option"
+                        }
+                    >
+                        <input
+                            className="service-option-input"
+                            type="radio"
+                            id="gents"
+                            name="input"
+                            value={selectionType.GENTS}
+                            onChange={(e) => {
+                                setSelectedService(e.target.value);
+                            }}
+                            checked={selectedService === "gents"}
+                        />
+                        <label htmlFor="gents">Gents &#38; Children</label>
+                    </div>
+                    <div
+                        className={
+                            selectedService === selectionType.HAIRUPDO
+                                ? "service-option option-active"
+                                : "service-option"
+                        }
+                    >
+                        <input
+                            className="service-option-input"
+                            type="radio"
+                            id="hair-up-dos"
+                            name="input"
+                            value={selectionType.HAIRUPDO}
+                            onChange={(e) => {
+                                setSelectedService(e.target.value);
+                            }}
+                            checked={selectedService === "hair-up-dos"}
+                        />
+                        <label htmlFor="hair-up-dos">Hair Up Do's</label>
+                    </div>
+                </form>
+                {serviceSelection()}
+            </div>
+        </section>
     );
 };
 
