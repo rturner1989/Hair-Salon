@@ -152,3 +152,9 @@ export const aboutFuture = [
         reverse: false,
     },
 ];
+
+export const cancellation = [
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
+];
