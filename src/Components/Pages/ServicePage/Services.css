@@ -156,64 +156,35 @@
     font-family: "Archivo", sans-serif;
     text-transform: uppercase;
 }
-.service-options-mobile {
-    display: grid;
-    grid-template-areas: "tile1" "tile2" "tile3" "tile4";
-    grid-template-columns: 100%;
-    gap: 1rem;
-    max-width: 600px;
-    width: 100%;
-    justify-items: center;
-}
-.service-tile-mobile {
-    padding: 1rem;
+/* Radio mobile category selection */
+.options-list {
     display: flex;
-    max-width: 555px;
-    width: 100%;
-    min-height: 300px;
-}
-.service-tile1,
-.service-tile3 {
     flex-direction: row;
-    background: linear-gradient(
-        135deg,
-        rgb(206, 178, 39) 40%,
-        rgb(255, 255, 255) 20px
-    );
-}
-.service-tile2,
-.service-tile4 {
-    flex-direction: row-reverse;
-    background: linear-gradient(
-        -135deg,
-        rgb(206, 178, 39) 40%,
-        rgb(255, 255, 255) 20px
-    );
-}
-.options-container-mobile {
     width: 100%;
-    background-color: white;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+.option-active {
+    background-color: black;
+    color: white;
+}
+.service-option {
+    letter-spacing: 0.2rem;
+}
+.service-option:hover {
+    background-color: grey;
+    color: white;
+}
+.service-option label {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
-.options-container-mobile h2 {
-    font-family: "Archivo", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    font-size: 1.2rem;
-    text-align: center;
+.service-option-input {
+    appearance: none;
 }
-.options-img-container-mobile {
-    width: 100%;
-    display: flex;
-}
-.service-tile-img-mobile {
-    aspect-ratio: 1/1;
-    width: 100%;
-}
-
 /* Cancellation Policy */
 .cancellation-container {
     width: 100%;
@@ -276,22 +247,6 @@
     .blurb-line3 {
         font-size: 1.4rem;
     }
-
-    /* Tile content */
-    .service-options-container {
-        gap: 1rem;
-        padding: 0.5rem;
-    }
-    .service-options-mobile {
-        max-width: unset;
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-    .service-options-container h1 {
-        width: 100%;
-        font-size: 1.3rem;
-    }
-
     /* About Services */
     .about-service-container {
         gap: 1rem;
@@ -310,40 +265,4 @@
         padding: 1rem 0;
         max-width: none;
     }
-}
-/* Radio mobile category selection */
-.services-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 3rem 0;
-}
-.options-list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1rem 0;
-    align-items: center;
-    justify-content: center;
-}
-.option-active {
-    background-color: black;
-    color: white;
-}
-.service-option {
-    letter-spacing: 0.2rem;
-}
-.service-option:hover {
-    background-color: grey;
-    color: white;
-}
-.service-option label {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    padding: 0.5rem;
-}
-.service-option-input {
-    appearance: none;
 }
