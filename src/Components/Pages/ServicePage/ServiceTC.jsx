@@ -5,8 +5,8 @@ const ServiceTC = () => {
     return (
         <section className="about-service-container">
             <h3>About my Services</h3>
-            {cancellation.map((policy) => {
-                return <p>{policy}</p>;
+            {cancellation.map((policy, index) => {
+                return <p key={index}>{policy}</p>;
             })}
         </section>
     );
