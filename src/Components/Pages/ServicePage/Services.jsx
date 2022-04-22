@@ -2,6 +2,7 @@ import ServiceCancellation from "./ServiceCancellation";
 import ServiceHeader from "./ServiceHeader";
 import ServiceSection from "./ServiceSection";
 import ServiceTC from "./ServiceTC";
+import MobileCategorySelection from "./MobileCategorySelection";
 
 const Services = () => {
     return (
@@ -10,6 +11,7 @@ const Services = () => {
             <ServiceSection />
             <ServiceTC />
             <ServiceCancellation />
+            <MobileCategorySelection />
         </main>
     );
 };

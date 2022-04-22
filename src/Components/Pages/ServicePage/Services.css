@@ -311,3 +311,39 @@
         max-width: none;
     }
 }
+/* Radio mobile category selection */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+.options-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+.option-active {
+    background-color: black;
+    color: white;
+}
+.service-option {
+    letter-spacing: 0.2rem;
+}
+.service-option:hover {
+    background-color: grey;
+    color: white;
+}
+.service-option label {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+.service-option-input {
+    appearance: none;
+}
