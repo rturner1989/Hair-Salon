@@ -85,9 +85,9 @@ const MobileCategorySelection = () => {
                             onChange={(e) => {
                                 setSelectedService(e.target.value);
                             }}
-                            checked={selectedService === "ladies"}
+                            checked={selectedService === selectionType.LADIES}
                         />
-                        <label htmlFor="ladies">Ladies</label>
+                        <label htmlFor="ladies">{selectionType.LADIES}</label>
                     </div>
                     <div
                         className={
@@ -105,9 +105,9 @@ const MobileCategorySelection = () => {
                             onChange={(e) => {
                                 setSelectedService(e.target.value);
                             }}
-                            checked={selectedService === "colours"}
+                            checked={selectedService === selectionType.COLOURS}
                         />
-                        <label htmlFor="colours">Colours</label>
+                        <label htmlFor="colours">{selectionType.COLOURS}</label>
                     </div>
                     <div
                         className={
@@ -125,9 +125,9 @@ const MobileCategorySelection = () => {
                             onChange={(e) => {
                                 setSelectedService(e.target.value);
                             }}
-                            checked={selectedService === "gents"}
+                            checked={selectedService === selectionType.GENTS}
                         />
-                        <label htmlFor="gents">Gents &#38; Children</label>
+                        <label htmlFor="gents">{selectionType.GENTS}</label>
                     </div>
                     <div
                         className={
@@ -145,9 +145,11 @@ const MobileCategorySelection = () => {
                             onChange={(e) => {
                                 setSelectedService(e.target.value);
                             }}
-                            checked={selectedService === "hair-up-dos"}
+                            checked={selectedService === selectionType.HAIRUPDO}
                         />
-                        <label htmlFor="hair-up-dos">Hair Up Do's</label>
+                        <label htmlFor="hair-up-dos">
+                            {selectionType.HAIRUPDO}
+                        </label>
                     </div>
                 </form>
                 {serviceSelection()}
