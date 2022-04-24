@@ -159,7 +159,6 @@
     min-height: 450px;
     max-width: 1050px;
     gap: 0 0.6rem;
-    min-width: 700px;
 }
 .contact-name {
     grid-area: name;
@@ -248,11 +247,8 @@
     .contact-phone h3 {
         text-align: right;
     }
-    .contact-information {
-        gap: 0.5rem;
-    }
     .contact-details {
-        gap: 0.5rem;
+        gap: 1rem 0.5rem;
         padding: 0.5rem 0;
     }
     .map-container {
@@ -262,10 +258,14 @@
     .form-section h2 {
         font-size: 1.3rem;
     }
+    .contact-tile {
+        gap: 0.5rem;
+    }
 
     /* Contact Form */
     .form-section {
         padding: 1rem;
+        gap: 1rem;
     }
     .contact-form section {
         width: 100%;
