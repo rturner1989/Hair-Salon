@@ -214,7 +214,7 @@
     .contact-info-section {
         max-width: 500px;
         transition: all 0.5s;
-        min-width: 335px;
+        min-width: 300px;
     }
     .contact-information {
         flex-wrap: wrap;
@@ -229,17 +229,17 @@
         min-width: unset;
     }
 }
-
 @media screen and (max-width: 430px) and (orientation: portrait) {
     .contact-container {
         padding: 0.5rem;
+        gap: 1rem;
     }
     .contact-info-section {
         padding: 0.5rem;
         box-shadow: unset;
     }
     .contact-information-container {
-        padding: 0.5rem;
+        padding: 1rem;
     }
     .contact-address div,
     .contact-number {
@@ -257,5 +257,33 @@
     }
     .map-container {
         padding-top: 0;
+    }
+    .contact-head h3,
+    .form-section h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Contact Form */
+    .form-section {
+        padding: 1rem;
+    }
+    .contact-form section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: unset;
+        gap: 0.5rem;
+        min-width: unset;
+    }
+    .contact-message {
+        height: 200px;
+    }
+    .contact-entry input,
+    .contact-entry textarea {
+        font-size: 1rem;
+    }
+    .contact-entry input:focus,
+    .contact-entry textarea:focus {
+        outline: solid 5px var(--strongGold);
     }
 }
