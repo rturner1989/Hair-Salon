@@ -182,3 +182,15 @@ export const cancellationPolicy = [
         ],
     },
 ];
+
+export const openingHours = [
+    { weekDay: "Monday", hours: "Closed" },
+    { weekDay: "Tuesday", hours: "Closed" },
+    { weekDay: "Wednesday", hours: "9am - 5pm" },
+    { weekDay: "Thursday", hours: "9am until late" },
+    { weekDay: "Friday", hours: "9am - 4.30pm" },
+    { weekDay: "Saturday", hours: "9am - 4pm" },
+    { weekDay: "Sunday", hours: "Closed" },
+];
+
+export const contactNumber = "07801 899 240";

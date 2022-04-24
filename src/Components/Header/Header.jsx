@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "./../../Images/logo.png";
 import useWindowDimensions from "./../../Hooks/useWindowDimensions";
+import { contactNumber } from "../../Data/Data";
 
 const Header = ({ toggleHamburger }) => {
     const [windowDimensions] = useWindowDimensions();
@@ -38,7 +39,7 @@ const Header = ({ toggleHamburger }) => {
     return (
         <header id="header">
             <div className="header-logo-contact">
-                <p>07801 899 240</p>
+                <p>{contactNumber}</p>
                 <img
                     className="nav-img"
                     src={logo}

@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiFillPhone } from "react-icons/ai";
 import logo from "./../../Images/logo.png";
+import Address from "../Address";
+import { contactNumber } from "../../Data/Data";
 
 const Footer = () => {
     return (
@@ -15,17 +17,13 @@ const Footer = () => {
                 />
             </div>
             <div className="footer-contact">
-                <div className="footer-address">
-                    <h3>LV Hair</h3>
-                    <p>3 Bridge Street </p>
-                    <p>Hereford, HR4 0DF</p>
-                </div>
+                <Address compName={"footer-address"} />
                 <p className="footer-number">
                     {" "}
                     <span>
                         <AiFillPhone className="icon-svg" />
                     </span>
-                    07801 899 240
+                    {contactNumber}
                 </p>
             </div>
             <div className="social-links-container">

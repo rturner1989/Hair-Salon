@@ -51,6 +51,7 @@
     width: 100%;
     height: 100%;
 }
+
 /* Contact Head */
 .contact-head {
     border-top: 1px solid black;
@@ -82,6 +83,12 @@
     justify-content: center;
     gap: 1rem;
 }
+.contact-tile-mobile-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
 .contact-hours p {
     display: flex;
     justify-content: space-between;
@@ -90,6 +97,9 @@
 .map-container {
     width: 100%;
     padding-top: 1rem;
+    /* aspect-ratio: 1/1; */
+    min-width: 434px;
+    max-width: 720px;
 }
 #iframe {
     width: 100%;
@@ -199,4 +209,53 @@
 .submit-btn:hover {
     color: rgb(216, 200, 121);
     background-color: black;
+}
+@media screen and (max-width: 903px) {
+    .contact-info-section {
+        max-width: 500px;
+        transition: all 0.5s;
+        min-width: 335px;
+    }
+    .contact-information {
+        flex-wrap: wrap;
+    }
+    .contact-details {
+        width: 100%;
+        min-width: unset;
+    }
+    .map-container {
+        aspect-ratio: 1/1;
+        max-width: 434px;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 430px) and (orientation: portrait) {
+    .contact-container {
+        padding: 0.5rem;
+    }
+    .contact-info-section {
+        padding: 0.5rem;
+        box-shadow: unset;
+    }
+    .contact-information-container {
+        padding: 0.5rem;
+    }
+    .contact-address div,
+    .contact-number {
+        min-height: 63px;
+    }
+    .contact-phone h3 {
+        text-align: right;
+    }
+    .contact-information {
+        gap: 0.5rem;
+    }
+    .contact-details {
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    .map-container {
+        padding-top: 0;
+    }
 }
