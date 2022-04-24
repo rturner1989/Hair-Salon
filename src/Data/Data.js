@@ -153,8 +153,32 @@ export const aboutFuture = [
     },
 ];
 
-export const cancellation = [
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia. Itaque cupiditate qui ullam, impedit ad sequi?",
+export const aboutServiceTC = [
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia.",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia.",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint ratione rerum voluptatum praesentium, temporibus repellat aliquid. Rerum, aliquid fugit? Perspiciatis pariatur magnam quam, nisi sint id itaque nostrum dicta reprehenderit voluptatibus, nesciunt sit perferendis beatae qui corrupti repellendus illum quos ut mollitia.",
+];
+
+export const cancellationPolicy = [
+    {
+        title: "Cancelling An Appointment",
+        policy: [
+            "I know life doesnt always go to plan and things come up, therefore, in consideration of my other clients,",
+            "If you cant make an appointment please contact me ASAP.",
+        ],
+    },
+    {
+        title: "Deposits",
+        policy: [
+            "Less than 24 hours notice will result in a 50% non-refundable charge of the service you were booked in for.",
+            "A no show for the appointment will be a 100% non-refundable charge of the service.",
+        ],
+    },
+    {
+        title: "Future Appointments",
+        policy: [
+            "Repeat offenders of no shows will not be welcome to book any future appointments.",
+            "To cancel, please contact me directly.",
+        ],
+    },
 ];
