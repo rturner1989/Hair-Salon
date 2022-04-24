@@ -153,6 +153,12 @@ const MobileCategorySelection = () => {
                     </div>
                 </form>
                 {serviceSelection()}
+                <div>
+                    <p>
+                        &#42; Price includes cut &#38; finish (Excludes toner)
+                    </p>
+                    <p>&#42; Additional £10.00 for long/thick hair</p>
+                </div>
             </div>
         </section>
     );
