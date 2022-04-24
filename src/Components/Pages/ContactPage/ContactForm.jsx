@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
-    const [formData, setFormData] = useState({
+    const defaultFormData = {
         from_name: "",
         phone: "",
         email: "",
         message: "",
-    });
+    };
+    const [formData, setFormData] = useState(defaultFormData);
     const [isSubmit, setIsSubmit] = useState(false);
 
     const onSubmit = (e) => {
@@ -27,12 +28,7 @@ export const ContactForm = () => {
                     console.log(error.text);
                 }
             );
-        setFormData({
-            from_name: "",
-            phone: "",
-            email: "",
-            message: "",
-        });
+        setFormData(defaultFormData);
         setIsSubmit(true);
     };
 
