@@ -5,25 +5,25 @@ import useWindowDimensions from "../../../Hooks/useWindowDimensions";
 const ServiceCancellation = () => {
     const [windowDimensions] = useWindowDimensions();
 
+    const policyMap = cancellationPolicy.map((cancel) => {
+        const { title, policy } = cancel;
+        return (
+            <div key={title}>
+                <h3>{title}</h3>
+                {policy.map((para) => {
+                    return <p key={para.slice(0, 9)}>{para}</p>;
+                })}
+            </div>
+        );
+    });
+
     if (windowDimensions.width < 555) {
         return (
             <section className="cancellation-container">
                 <div className="cancellation-mobile-border">
                     <div className="cancellation">
                         <h2>If You Need To Cancel Your Appointment</h2>
-                        {cancellationPolicy.map((cancel) => {
-                            const { title, policy } = cancel;
-                            return (
-                                <div key={title}>
-                                    <h3>{title}</h3>
-                                    {policy.map((para) => {
-                                        return (
-                                            <p key={para.slice(0, 9)}>{para}</p>
-                                        );
-                                    })}
-                                </div>
-                            );
-                        })}
+                        {policyMap}
                     </div>
                 </div>
             </section>
@@ -34,17 +34,7 @@ const ServiceCancellation = () => {
         <section className="cancellation-container">
             <div className="cancellation">
                 <h2>If You Need To Cancel Your Appointment</h2>
-                {cancellationPolicy.map((cancel) => {
-                    const { title, policy } = cancel;
-                    return (
-                        <div key={title}>
-                            <h3>{title}</h3>
-                            {policy.map((para) => {
-                                return <p key={para.slice(0, 9)}>{para}</p>;
-                            })}
-                        </div>
-                    );
-                })}
+                {policyMap}
             </div>
         </section>
     );
