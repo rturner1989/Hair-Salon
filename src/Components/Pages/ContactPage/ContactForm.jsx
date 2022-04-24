@@ -32,15 +32,6 @@ export const ContactForm = () => {
         setIsSubmit(true);
     };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsSubmit(false);
-        }, 3000);
-        return () => {
-            clearTimeout(timer);
-        };
-    }, [isSubmit]);
-
     const onChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
@@ -51,6 +42,15 @@ export const ContactForm = () => {
         }
         return;
     };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsSubmit(false);
+        }, 3000);
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [isSubmit]);
 
     return (
         <form className="contact-form" onSubmit={(e) => onSubmit(e)}>

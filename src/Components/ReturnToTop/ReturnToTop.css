@@ -11,8 +11,8 @@
     height: 50px;
     bottom: 3rem;
     right: 3rem;
-    border: unset;
-    background-color: black;
+    border: 2px solid rgb(206, 178, 39);
+    background-color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;

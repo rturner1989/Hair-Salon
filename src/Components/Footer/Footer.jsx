@@ -17,7 +17,9 @@ const Footer = () => {
                 />
             </div>
             <div className="footer-contact">
-                <Address compName={"footer-address"} />
+                <b>
+                    <Address compName={"footer-address"} bold={true} />
+                </b>
                 <p className="footer-number">
                     {" "}
                     <span>
