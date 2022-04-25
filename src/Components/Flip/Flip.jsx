@@ -8,7 +8,7 @@ const Flip = ({ tile, index }) => {
         threshold: 0,
     };
 
-    const [flipRef, isVisible] = useIntersectionObserver(null, options);
+    const [flipRef, isVisible] = useIntersectionObserver(null, options, true);
 
     return (
         <div
