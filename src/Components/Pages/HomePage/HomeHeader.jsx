@@ -5,6 +5,12 @@ import headerImg from "./../../../Images/BEAUTI~1 copy.webp";
 const HomeHeader = () => {
     return (
         <header className="home-header">
+            <a
+                className="home-header-attr"
+                href="https://www.freepik.com/photos/smooth-hair"
+            >
+                Smooth hair photo created by master1305
+            </a>
             <div className="home-header-blurb-container">
                 <div className="home-header-blurb">
                     <h3>Welcome</h3>

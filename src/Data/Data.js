@@ -1,11 +1,11 @@
-import serviceImg from "./../Images/hair-tools.webp";
-import hairTypeImg from "./../Images/redhead.webp";
-import priceImg from "./../Images/Smiling-Woman.webp";
-import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.webp";
-import ladiesServiceImg from "./../Images/female-cutting.webp";
-import colorServiceImg from "./../Images/hairdresser-does-hair-style-woman.webp";
-import gentsServiceImg from "./../Images/stylish-man-sitting-barbershop.webp";
-import bridalServiceImg from "./../Images/wedding-hair.webp";
+import serviceImg from "./../Images/hair-tools.jpg";
+import hairTypeImg from "./../Images/redhead.jpg";
+import priceImg from "./../Images/Smiling-Woman.jpg";
+import toolsImg from "./../Images/woman-mixing-hair-dye-bowl.jpg";
+import ladiesServiceImg from "./../Images/female-cutting.jpg";
+import colorServiceImg from "./../Images/hairdresser-does-hair-style-woman.jpg";
+import gentsServiceImg from "./../Images/stylish-man-sitting-barbershop.jpg";
+import bridalServiceImg from "./../Images/wedding-hair.jpg";
 import portraitImg from "./../Images/claire-about.webp";
 import workingImg from "./../Images/workingImage.jpg";
 import storeFront from "./../Images/shopFront.jpg";
@@ -24,6 +24,8 @@ export const services = [
             { name: "Wash & Curl", price: "£20.00" },
             { name: "Wash & Blast Dry", price: "£10.00" },
         ],
+        attributeLink: "https://www.freepik.com/photos/hair-stylist",
+        attributeText: "Hair stylist photo created by prostooleh",
     },
     {
         title: "Colours",
@@ -40,6 +42,8 @@ export const services = [
             { name: "Balayage", price: "£92.00" },
             { name: "Toner", price: "£10.00" },
         ],
+        attributeLink: "https://www.freepik.com/photos/hair-salon",
+        attributeText: "Hair salon photo created by fabrikasimf",
     },
     {
         title: "Gents",
@@ -50,6 +54,8 @@ export const services = [
             { name: "Head Shave", price: "£6.00" },
             { name: "Childs Cut", price: "£7.00 - £10.00" },
         ],
+        attributeLink: "https://www.freepik.com/photos/men-haircut",
+        attributeText: "Men haircut photo created by prostooleh",
     },
     {
         title: "Hair Up",
@@ -59,6 +65,8 @@ export const services = [
             { name: "Hair Up Do", price: "£30.00" },
             { name: "Bridal", price: "On Request" },
         ],
+        attributeLink: "https://www.freepik.com/photos/stylist",
+        attributeText: "Stylist photo created by cookie_studio",
     },
 ];
 
@@ -69,6 +77,8 @@ export const homeTiles = [
         img: toolsImg,
         imgAlt: "Service tools of the trade representing quality.",
         innerText: "Hello World",
+        attributeLink: "https://www.freepik.com/photos/hair-extensions",
+        attributeText: "Hair extensions photo created by atlascompany",
     },
     {
         title: "Any Type of Hair",
@@ -76,6 +86,8 @@ export const homeTiles = [
         img: hairTypeImg,
         imgAlt: "Image of red headed lady with curly hair.",
         innerText: "Hello World",
+        attributeLink: "https://www.freepik.com/photos/redhead",
+        attributeText: "Redhead photo created by lookstudio",
     },
     {
         title: "Great Prices",
@@ -84,6 +96,8 @@ export const homeTiles = [
         innerText: "Hello World",
         imgAlt: "Image of brunette haired lady with straight hair",
         reverse: "reverse",
+        attributeLink: "https://www.freepik.com/photos/topless",
+        attributeText: "Topless photo created by drobotdean",
     },
     {
         title: "The Best Tools for the Job",
@@ -92,6 +106,8 @@ export const homeTiles = [
         innerText: "Hello World",
         imgAlt: "A combination of tools used when cutting hair.",
         reverse: "reverse",
+        attributeLink: "https://www.freepik.com/photos/beauty-salon",
+        attributeText: "Beauty salon photo created by freepik",
     },
 ];
 

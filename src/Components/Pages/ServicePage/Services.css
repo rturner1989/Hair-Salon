@@ -21,6 +21,14 @@
     width: 100%;
     object-fit: cover;
 }
+.service-header-attr {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.499);
+    z-index: 300;
+}
 .service-header-blurb {
     z-index: 100;
     font-size: min(3vw, 1.6rem);
@@ -124,6 +132,16 @@
 }
 .options-img-container {
     width: 100%;
+    position: relative;
+}
+.attribute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-align: center;
 }
 .option {
     display: flex;

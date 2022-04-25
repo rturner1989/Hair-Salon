@@ -26,6 +26,14 @@
     align-items: center;
     transition: all 0.3s;
 }
+.home-header-attr {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.499);
+    z-index: 300;
+}
 .home-header-blurb {
     max-width: 500px;
     padding-left: 5rem;

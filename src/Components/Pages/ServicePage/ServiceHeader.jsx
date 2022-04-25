@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import serviceHero from "./../../../Images/woman-washing-head-hairsalon.webp";
+import serviceHero from "./../../../Images/woman-washing-head-hairsalon.jpg";
 
 const ServiceHeader = () => {
     return (
         <section className="service-header">
+            <a
+                className="service-header-attr"
+                href="https://www.freepik.com/photos/hair-salon"
+            >
+                Hair salon photo created by prostooleh
+            </a>
             <img className="service-header-img" src={serviceHero} alt="" />
             <div className="service-header-blurb">
                 <p className="blurb-line1">
