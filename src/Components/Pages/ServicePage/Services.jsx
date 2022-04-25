@@ -9,10 +9,10 @@ const Services = () => {
     const [windowDimensions] = useWindowDimensions();
 
     const serviceSelect = () => {
-        if (windowDimensions.width > 555) {
-            return <ServiceSection />;
+        if (windowDimensions.width < 570) {
+            return <MobileCategorySelection />;
         }
-        return <MobileCategorySelection />;
+        return <ServiceSection />;
     };
 
     return (

@@ -7,8 +7,14 @@ const ServiceSection = () => {
         <section className="service-options-container">
             <h1>Services</h1>
             <div className="service-options">
-                {services.map((service) => {
-                    return <ServiceTile key={service.title} tile={service} />;
+                {services.map((service, index) => {
+                    return (
+                        <ServiceTile
+                            key={service.title}
+                            tile={service}
+                            index={index}
+                        />
+                    );
                 })}
                 <div className="service-overlay"></div>
             </div>
