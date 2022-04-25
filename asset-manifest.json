@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/Hair-Salon/static/css/main.e763d229.css",
-    "main.js": "/Hair-Salon/static/js/main.2057a703.js",
-    "static/media/woman-washing-head-hairsalon.webp": "/Hair-Salon/static/media/woman-washing-head-hairsalon.6e14e39778dcb2975e55.webp",
-    "static/media/stylish-man-sitting-barbershop.webp": "/Hair-Salon/static/media/stylish-man-sitting-barbershop.bc4c8dce247647b80f3d.webp",
-    "static/media/female-cutting.webp": "/Hair-Salon/static/media/female-cutting.81d3ddb41608851a4be0.webp",
-    "static/media/Smiling-Woman.webp": "/Hair-Salon/static/media/Smiling-Woman.cab42d0d935c6caeae39.webp",
-    "static/media/hair-tools.webp": "/Hair-Salon/static/media/hair-tools.ee07637b4573cc37be3f.webp",
-    "static/media/redhead.webp": "/Hair-Salon/static/media/redhead.f40156b87b97b381534e.webp",
-    "static/media/hairdresser-does-hair-style-woman.webp": "/Hair-Salon/static/media/hairdresser-does-hair-style-woman.d7c774e9b5b6e2d724bc.webp",
-    "static/media/woman-mixing-hair-dye-bowl.webp": "/Hair-Salon/static/media/woman-mixing-hair-dye-bowl.0ce1a0ab1b0158ff9246.webp",
+    "main.css": "/Hair-Salon/static/css/main.30c4c959.css",
+    "main.js": "/Hair-Salon/static/js/main.131de1b4.js",
+    "static/media/woman-washing-head-hairsalon.jpg": "/Hair-Salon/static/media/woman-washing-head-hairsalon.146d79e35d3a30d3c4d2.jpg",
     "static/media/BEAUTI~1 copy.webp": "/Hair-Salon/static/media/BEAUTI~1 copy.9e03deedd9141f7890c7.webp",
-    "static/media/wedding-hair.webp": "/Hair-Salon/static/media/wedding-hair.35616b96bb9086cb3149.webp",
     "static/media/about-header.webp": "/Hair-Salon/static/media/about-header.4b15bc06152e47cc6eaa.webp",
     "static/media/logo.png": "/Hair-Salon/static/media/logo.37c7dae50d7062dc16d2.png",
     "static/media/workingImage.jpg": "/Hair-Salon/static/media/workingImage.b983740b14324eea37a1.jpg",
+    "static/media/hair-tools.jpg": "/Hair-Salon/static/media/hair-tools.5411a14859e3443a4ab1.jpg",
     "static/media/shopFront.jpg": "/Hair-Salon/static/media/shopFront.bb3bc93f0d0ca7f1a1e1.jpg",
+    "static/media/redhead.jpg": "/Hair-Salon/static/media/redhead.6e40b01419fa676ae878.jpg",
+    "static/media/stylish-man-sitting-barbershop.jpg": "/Hair-Salon/static/media/stylish-man-sitting-barbershop.729c1d31fe9927ea7f60.jpg",
+    "static/media/wedding-hair.jpg": "/Hair-Salon/static/media/wedding-hair.306eb014806978644703.jpg",
+    "static/media/female-cutting.jpg": "/Hair-Salon/static/media/female-cutting.7ec22f640dace11ed8eb.jpg",
+    "static/media/woman-mixing-hair-dye-bowl.jpg": "/Hair-Salon/static/media/woman-mixing-hair-dye-bowl.2f0d55d3590596c90ef0.jpg",
+    "static/media/hairdresser-does-hair-style-woman.jpg": "/Hair-Salon/static/media/hairdresser-does-hair-style-woman.7df2057f80a6b57d15d7.jpg",
+    "static/media/Smiling-Woman.jpg": "/Hair-Salon/static/media/Smiling-Woman.6bbdcf557fa9b92e304d.jpg",
     "static/media/claire-about.webp": "/Hair-Salon/static/media/claire-about.cb8289edcc0426c0e7e1.webp",
     "index.html": "/Hair-Salon/index.html",
-    "main.e763d229.css.map": "/Hair-Salon/static/css/main.e763d229.css.map",
-    "main.2057a703.js.map": "/Hair-Salon/static/js/main.2057a703.js.map"
+    "main.30c4c959.css.map": "/Hair-Salon/static/css/main.30c4c959.css.map",
+    "main.131de1b4.js.map": "/Hair-Salon/static/js/main.131de1b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e763d229.css",
-    "static/js/main.2057a703.js"
+    "static/css/main.30c4c959.css",
+    "static/js/main.131de1b4.js"
   ]
 }
