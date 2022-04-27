@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Hair-Salon/static/css/main.30c4c959.css",
-    "main.js": "/Hair-Salon/static/js/main.131de1b4.js",
+    "main.css": "/Hair-Salon/static/css/main.53261334.css",
+    "main.js": "/Hair-Salon/static/js/main.1c38b519.js",
     "static/media/woman-washing-head-hairsalon.jpg": "/Hair-Salon/static/media/woman-washing-head-hairsalon.146d79e35d3a30d3c4d2.jpg",
     "static/media/BEAUTI~1 copy.webp": "/Hair-Salon/static/media/BEAUTI~1 copy.9e03deedd9141f7890c7.webp",
+    "static/media/landscape-colour-hair.jpg": "/Hair-Salon/static/media/landscape-colour-hair.d9d2eb9634587e67c4f8.jpg",
+    "static/media/guy-barbershop.jpg": "/Hair-Salon/static/media/guy-barbershop.43a498de4981bed0e20f.jpg",
     "static/media/about-header.webp": "/Hair-Salon/static/media/about-header.4b15bc06152e47cc6eaa.webp",
     "static/media/logo.png": "/Hair-Salon/static/media/logo.37c7dae50d7062dc16d2.png",
     "static/media/workingImage.jpg": "/Hair-Salon/static/media/workingImage.b983740b14324eea37a1.jpg",
+    "static/media/hair-supplies-paper-bag.jpg": "/Hair-Salon/static/media/hair-supplies-paper-bag.0d7bab74b63e88d53933.jpg",
     "static/media/hair-tools.jpg": "/Hair-Salon/static/media/hair-tools.5411a14859e3443a4ab1.jpg",
     "static/media/shopFront.jpg": "/Hair-Salon/static/media/shopFront.bb3bc93f0d0ca7f1a1e1.jpg",
     "static/media/redhead.jpg": "/Hair-Salon/static/media/redhead.6e40b01419fa676ae878.jpg",
     "static/media/stylish-man-sitting-barbershop.jpg": "/Hair-Salon/static/media/stylish-man-sitting-barbershop.729c1d31fe9927ea7f60.jpg",
+    "static/media/insideSalon.jpg": "/Hair-Salon/static/media/insideSalon.ef7dfc6416d9652c4643.jpg",
     "static/media/wedding-hair.jpg": "/Hair-Salon/static/media/wedding-hair.306eb014806978644703.jpg",
     "static/media/female-cutting.jpg": "/Hair-Salon/static/media/female-cutting.7ec22f640dace11ed8eb.jpg",
     "static/media/woman-mixing-hair-dye-bowl.jpg": "/Hair-Salon/static/media/woman-mixing-hair-dye-bowl.2f0d55d3590596c90ef0.jpg",
@@ -18,11 +22,11 @@
     "static/media/Smiling-Woman.jpg": "/Hair-Salon/static/media/Smiling-Woman.6bbdcf557fa9b92e304d.jpg",
     "static/media/claire-about.webp": "/Hair-Salon/static/media/claire-about.cb8289edcc0426c0e7e1.webp",
     "index.html": "/Hair-Salon/index.html",
-    "main.30c4c959.css.map": "/Hair-Salon/static/css/main.30c4c959.css.map",
-    "main.131de1b4.js.map": "/Hair-Salon/static/js/main.131de1b4.js.map"
+    "main.53261334.css.map": "/Hair-Salon/static/css/main.53261334.css.map",
+    "main.1c38b519.js.map": "/Hair-Salon/static/js/main.1c38b519.js.map"
   },
   "entrypoints": [
-    "static/css/main.30c4c959.css",
-    "static/js/main.131de1b4.js"
+    "static/css/main.53261334.css",
+    "static/js/main.1c38b519.js"
   ]
 }
