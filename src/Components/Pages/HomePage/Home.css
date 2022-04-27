@@ -33,6 +33,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.499);
     z-index: 300;
+    font-size: min(3vw, 1rem);
 }
 .home-header-blurb {
     max-width: 500px;
@@ -56,6 +57,7 @@
         background-color: rgba(0, 0, 0, 0.5);
     }
 }
+
 /* Tiles */
 .tile-section {
     position: relative;
@@ -139,6 +141,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     animation: heightUp forwards 0.2s;
     color: white;
+    font-size: 1.3rem;
+    text-align: center;
 }
 .active {
     display: flex;
@@ -252,6 +256,22 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    .home-header-blurb {
+        padding: 1rem;
+        max-width: unset;
+    }
+    .home-header-blurb h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .home-header-blurb p {
+        font-size: 1.2rem;
+    }
+    .home-header {
+        min-height: 300px;
+    }
+}
 @media screen and (max-width: 430px) and (orientation: portrait) {
     .homePage {
         gap: 0;
