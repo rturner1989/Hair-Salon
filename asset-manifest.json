@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Hair-Salon/static/css/main.f78d81cb.css",
+    "main.css": "/Hair-Salon/static/css/main.20b42c2c.css",
     "main.js": "/Hair-Salon/static/js/main.03c37150.js",
     "static/media/woman-washing-head-hairsalon.jpg": "/Hair-Salon/static/media/woman-washing-head-hairsalon.146d79e35d3a30d3c4d2.jpg",
     "static/media/BEAUTI~1 copy.webp": "/Hair-Salon/static/media/BEAUTI~1 copy.9e03deedd9141f7890c7.webp",
@@ -22,11 +22,11 @@
     "static/media/jan-kopriva-57TZxNjl1ls-unsplash.jpg": "/Hair-Salon/static/media/jan-kopriva-57TZxNjl1ls-unsplash.f061abdfa2911fb19736.jpg",
     "static/media/claire-about.webp": "/Hair-Salon/static/media/claire-about.cb8289edcc0426c0e7e1.webp",
     "index.html": "/Hair-Salon/index.html",
-    "main.f78d81cb.css.map": "/Hair-Salon/static/css/main.f78d81cb.css.map",
+    "main.20b42c2c.css.map": "/Hair-Salon/static/css/main.20b42c2c.css.map",
     "main.03c37150.js.map": "/Hair-Salon/static/js/main.03c37150.js.map"
   },
   "entrypoints": [
-    "static/css/main.f78d81cb.css",
+    "static/css/main.20b42c2c.css",
     "static/js/main.03c37150.js"
   ]
 }
