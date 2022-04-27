@@ -3,7 +3,11 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import useIntersectionObserver from "../../Hooks/useIntersectionObserver";
 
 const ReturnToTop = () => {
-    const [intersectionRef, isVisible] = useIntersectionObserver();
+    const [intersectionRef, isVisible] = useIntersectionObserver(
+        null,
+        null,
+        true
+    );
 
     const goToTop = () => {
         window.scrollTo({
