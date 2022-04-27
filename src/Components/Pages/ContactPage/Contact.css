@@ -179,7 +179,7 @@
     width: 100%;
     grid-area: email;
 }
-.contact-phone {
+.contact-form-phone {
     width: 100%;
     max-width: 49.5%;
     grid-area: phone;
@@ -253,11 +253,12 @@
 }
 @media screen and (max-width: 880px) {
     .contact-name,
-    .contact-phone {
+    .contact-form-phone {
         width: 100%;
         max-width: unset;
     }
-    .contact-address {
+    .contact-address,
+    .contact-phone {
         width: 100%;
     }
 }

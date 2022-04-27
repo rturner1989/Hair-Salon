@@ -66,7 +66,7 @@ export const ContactForm = () => {
                         onChange={onChange}
                     />
                 </label>
-                <label className="contact-phone contact-entry" htmlFor="">
+                <label className="contact-form-phone contact-entry" htmlFor="">
                     <input
                         name="phone"
                         value={formData.phone}
