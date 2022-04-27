@@ -257,6 +257,9 @@
         width: 100%;
         max-width: unset;
     }
+    .contact-address {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 430px) and (orientation: portrait) {
     .contact-container {
@@ -290,6 +293,9 @@
     }
     .contact-tile {
         gap: 0.5rem;
+    }
+    .contact-phone {
+        align-items: flex-end;
     }
 
     /* Contact Form */
