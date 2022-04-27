@@ -9,6 +9,10 @@ import bridalServiceImg from "./../Images/wedding-hair.jpg";
 import portraitImg from "./../Images/claire-about.webp";
 import workingImg from "./../Images/workingImage.jpg";
 import storeFront from "./../Images/shopFront.jpg";
+import flipImage1 from "./../Images/hair-supplies-paper-bag.jpg";
+import flipImage2 from "./../Images/landscape-colour-hair.jpg";
+import flipImage3 from "./../Images/jan-kopriva-57TZxNjl1ls-unsplash.jpg";
+import flipImage4 from "./../Images/insideSalon.jpg";
 
 export const services = [
     {
@@ -76,38 +80,42 @@ export const homeTiles = [
         blurb: "A quality service you can expect on every return to the salon.",
         img: toolsImg,
         imgAlt: "Service tools of the trade representing quality.",
-        innerText: "Hello World",
+        innerText: "A service to remember.",
         attributeLink: "https://www.freepik.com/photos/hair-extensions",
         attributeText: "Hair extensions photo created by atlascompany",
+        flipImage: flipImage3,
     },
     {
         title: "Any Type of Hair",
         blurb: "Curly, Straight, Long or Short. All hair types are welcome.",
         img: hairTypeImg,
         imgAlt: "Image of red headed lady with curly hair.",
-        innerText: "Hello World",
+        innerText: "No hair is off limits.",
         attributeLink: "https://www.freepik.com/photos/redhead",
         attributeText: "Redhead photo created by lookstudio",
+        flipImage: flipImage2,
     },
     {
         title: "Great Prices",
         blurb: "A competitive price to match any service needed.",
         img: priceImg,
-        innerText: "Hello World",
+        innerText: "A price to suit every budget.",
         imgAlt: "Image of brunette haired lady with straight hair",
         reverse: "reverse",
         attributeLink: "https://www.freepik.com/photos/topless",
         attributeText: "Topless photo created by drobotdean",
+        flipImage: flipImage4,
     },
     {
         title: "The Best Tools for the Job",
-        blurb: "Employing the latest techniques and only the best equipment, a quality service is assured throughout.",
+        blurb: "Employing the latest techniques and only the best equipment.",
         img: serviceImg,
-        innerText: "Hello World",
+        innerText: "A quality service is assured throughout.",
         imgAlt: "A combination of tools used when cutting hair.",
         reverse: "reverse",
         attributeLink: "https://www.freepik.com/photos/beauty-salon",
         attributeText: "Beauty salon photo created by freepik",
+        flipImage: flipImage1,
     },
 ];
 
