@@ -140,10 +140,8 @@
     }
 }
 @media screen and (max-width: 430px) and (orientation: portrait) {
-    .header-logo-contact {
-        color: transparent;
-        height: 0;
-        width: 0;
+    .header-logo-contact p {
+        display: none;
     }
     .nav-img {
         max-width: 100px;
