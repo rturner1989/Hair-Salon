@@ -18,7 +18,13 @@ const Flip = ({ tile, index }) => {
             ref={flipRef}
         >
             <div className="flip-card-inner">
-                <div className="flip-card-front">Front</div>
+                <div className="flip-card-front">
+                    <img
+                        style={{ maxWidth: "100%", objectFit: "contain" }}
+                        src={tile.flipImage}
+                        alt=""
+                    />
+                </div>
                 <div className={`flip-card-back card-back${index + 1}`}>
                     <TextTileMobile key={index} tile={tile} index={index} />
                 </div>
